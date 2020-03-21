@@ -8,12 +8,15 @@ var searchData=
   ['animated_5fparameter_6',['animated_parameter',['../structhr_1_1anims_1_1animated__parameter.html',1,'hr::anims']]],
   ['animation_7',['animation',['../structhr_1_1animation.html',1,'hr']]],
   ['anthraxbonus_8',['anthraxBonus',['../complex2_8cpp.html#a6731d79729dd8104a1fe5c92136b6f4a',1,'hr::camelot']]],
-  ['arbi_5ftiling_9',['arbi_tiling',['../structhr_1_1arb_1_1arbi__tiling.html',1,'hr::arb']]],
-  ['arbitrile_2ecpp_10',['arbitrile.cpp',['../arbitrile_8cpp.html',1,'']]],
-  ['archimedean_2ecpp_11',['archimedean.cpp',['../archimedean_8cpp.html',1,'']]],
-  ['archimedean_5ftiling_12',['archimedean_tiling',['../structhr_1_1arcm_1_1archimedean__tiling.html',1,'hr::arcm']]],
-  ['asin_5fit_13',['asin_it',['../nonisotropic_8cpp.html#ab7f5649348afd481f86cc84f8873c43a',1,'hr::slr']]],
-  ['asonov_2ecpp_14',['asonov.cpp',['../asonov_8cpp.html',1,'']]],
-  ['at_15',['at',['../structhr_1_1walker.html#ae34b91e8bb152f330d75c17acc81cdec',1,'hr::walker::at()'],['../euclid_8cpp.html#a6164876fdb58698f1e228fd25ff0c015',1,'hr::euc::at()']]],
-  ['available_16',['available',['../raycaster_8cpp.html#a198ff03c0a666f2e8f9a6dfb9b091ecb',1,'hr::ray']]]
+  ['apply_5fchaos_9',['apply_chaos',['../pcmove_8cpp.html#ae4075a1503f0a2b57c96b2b4595e9db2',1,'hr']]],
+  ['arbi_5ftiling_10',['arbi_tiling',['../structhr_1_1arb_1_1arbi__tiling.html',1,'hr::arb']]],
+  ['arbitrile_2ecpp_11',['arbitrile.cpp',['../arbitrile_8cpp.html',1,'']]],
+  ['archimedean_2ecpp_12',['archimedean.cpp',['../archimedean_8cpp.html',1,'']]],
+  ['archimedean_5ftiling_13',['archimedean_tiling',['../structhr_1_1arcm_1_1archimedean__tiling.html',1,'hr::arcm']]],
+  ['asin_5fit_14',['asin_it',['../nonisotropic_8cpp.html#ab7f5649348afd481f86cc84f8873c43a',1,'hr::slr']]],
+  ['asonov_2ecpp_15',['asonov.cpp',['../asonov_8cpp.html',1,'']]],
+  ['at_16',['at',['../structhr_1_1walker.html#ae34b91e8bb152f330d75c17acc81cdec',1,'hr::walker::at()'],['../euclid_8cpp.html#a6164876fdb58698f1e228fd25ff0c015',1,'hr::euc::at()']]],
+  ['at_5fcommit_17',['at_commit',['../structhr_1_1changes__t.html#a00ab8bc8e7aedb00199af4052bb477f8',1,'hr::changes_t']]],
+  ['at_5frollback_18',['at_rollback',['../structhr_1_1changes__t.html#afddbfe1c62ead486eb8d4b6bc878bbf6',1,'hr::changes_t']]],
+  ['available_19',['available',['../raycaster_8cpp.html#a198ff03c0a666f2e8f9a6dfb9b091ecb',1,'hr::ray']]]
 ];

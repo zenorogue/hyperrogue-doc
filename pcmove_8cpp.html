@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="hr-icon-png96.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HyperRogue
-   &#160;<span id="projectnumber">11.2c</span>
+   &#160;<span id="projectnumber">11.3d</span>
    </div>
    <div id="projectbrief">game/visualization engine based on non-Euclidean geometry</div>
   </td>
@@ -144,11 +144,9 @@ EX void&#160;</td><td class="memItemRight" valign="bottom"><b>hr::copy_metadata<
 <tr class="memitem:acbaa343c18d4e7ad489fe4c482fcb5b5"><td class="memItemLeft" align="right" valign="top"><a id="acbaa343c18d4e7ad489fe4c482fcb5b5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>hr::playSound</b> (<a class="el" href="structhr_1_1cell.html">cell</a> *c, const string &amp;fname, int vol)</td></tr>
 <tr class="separator:acbaa343c18d4e7ad489fe4c482fcb5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6cfc13aa234965e4edfa4058e5ec63b"><td class="memItemLeft" align="right" valign="top"><a id="ae6cfc13aa234965e4edfa4058e5ec63b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>hr::switch_lhu_in</b> (eLand l)</td></tr>
+<tr class="memitem:ae6cfc13aa234965e4edfa4058e5ec63b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcmove_8cpp.html#ae6cfc13aa234965e4edfa4058e5ec63b">hr::switch_lhu_in</a> (eLand l)</td></tr>
 <tr class="separator:ae6cfc13aa234965e4edfa4058e5ec63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4075a1503f0a2b57c96b2b4595e9db2"><td class="memItemLeft" align="right" valign="top"><a id="ae4075a1503f0a2b57c96b2b4595e9db2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>hr::apply_chaos</b> ()</td></tr>
+<tr class="memitem:ae4075a1503f0a2b57c96b2b4595e9db2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcmove_8cpp.html#ae4075a1503f0a2b57c96b2b4595e9db2">hr::apply_chaos</a> ()</td></tr>
 <tr class="separator:ae4075a1503f0a2b57c96b2b4595e9db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10af55f42d605979baa0d767f9878822"><td class="memItemLeft" align="right" valign="top"><a id="a10af55f42d605979baa0d767f9878822"></a>
 EX bool&#160;</td><td class="memItemRight" valign="bottom"><b>hr::chaos_forbidden</b> (cell *c)</td></tr>
@@ -286,8 +284,7 @@ EX cell *&#160;</td><td class="memItemRight" valign="bottom"><b>hr::lastmove</b>
 <tr class="memitem:ac7ab1d7ab7bc27de145a065349a8dfde"><td class="memItemLeft" align="right" valign="top"><a id="ac7ab1d7ab7bc27de145a065349a8dfde"></a>
 EX cell *&#160;</td><td class="memItemRight" valign="bottom"><b>hr::global_pushto</b></td></tr>
 <tr class="separator:ac7ab1d7ab7bc27de145a065349a8dfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab65a154a41b9b607dd7606dff422c734"><td class="memItemLeft" align="right" valign="top"><a id="ab65a154a41b9b607dd7606dff422c734"></a>
-EX changes_t&#160;</td><td class="memItemRight" valign="bottom"><b>hr::changes</b></td></tr>
+<tr class="memitem:ab65a154a41b9b607dd7606dff422c734"><td class="memItemLeft" align="right" valign="top">EX changes_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcmove_8cpp.html#ab65a154a41b9b607dd7606dff422c734">hr::changes</a></td></tr>
 <tr class="separator:ab65a154a41b9b607dd7606dff422c734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18b08bad53e1a0bf77129db5ba1f611f"><td class="memItemLeft" align="right" valign="top"><a id="a18b08bad53e1a0bf77129db5ba1f611f"></a>
 EX int&#160;</td><td class="memItemRight" valign="bottom"><b>hr::plague_kills</b></td></tr>
@@ -298,7 +295,45 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hr::got_crossroads</b
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>PC movements. </p>
-</div><h2 class="groupheader">Variable Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="ae6cfc13aa234965e4edfa4058e5ec63b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6cfc13aa234965e4edfa4058e5ec63b">&#9670;&nbsp;</a></span>switch_lhu_in()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hr::switch_lhu_in </td>
+          <td>(</td>
+          <td class="paramtype">eLand&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Auxiliary function for <a class="el" href="pcmove_8cpp.html#ae4075a1503f0a2b57c96b2b4595e9db2">hr::apply_chaos()</a>. Returns whether the cell attribute LHU should be switched. </p>
+
+</div>
+</div>
+<a id="ae4075a1503f0a2b57c96b2b4595e9db2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4075a1503f0a2b57c96b2b4595e9db2">&#9670;&nbsp;</a></span>apply_chaos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hr::apply_chaos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Apply the Orb of Chaos. We assume that the player moves from cwt.peek, in in the direction given by cwt.spin. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
 <a id="a7ddc077917d5d500925cc5f1b80c28b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ddc077917d5d500925cc5f1b80c28b6">&#9670;&nbsp;</a></span>hauntedWarning</h2>
 
@@ -416,6 +451,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hr::got_crossroads</b
       </table>
 </div><div class="memdoc">
 <p>lands visited &ndash; unblock some modes </p>
+
+</div>
+</div>
+<a id="ab65a154a41b9b607dd7606dff422c734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab65a154a41b9b607dd7606dff422c734">&#9670;&nbsp;</a></span>changes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EX changes_t hr::changes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The only instance of changes_t </p>
 
 </div>
 </div>

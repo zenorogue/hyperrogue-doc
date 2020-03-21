@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['joy_5fconfigurer_715',['joy_configurer',['../structhr_1_1multi_1_1joy__configurer.html',1,'hr::multi']]]
+  ['joy_5fconfigurer_728',['joy_configurer',['../structhr_1_1multi_1_1joy__configurer.html',1,'hr::multi']]]
 ];
