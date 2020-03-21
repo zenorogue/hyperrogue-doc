@@ -65,6 +65,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -76,12 +77,17 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="hyper_8h.html">hyper.h</a>&quot;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacehr"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html">hr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9d1fb436fa17a92f6cd96c2339322fa9"><td class="memItemLeft" align="right" valign="top"><a id="a9d1fb436fa17a92f6cd96c2339322fa9"></a>
 EX bool&#160;</td><td class="memItemRight" valign="bottom"><b>hr::checkBarriersFront</b> (cellwalker bb, int q IS(5), bool cross IS(false))</td></tr>
 <tr class="separator:a9d1fb436fa17a92f6cd96c2339322fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1dd8ee19467d49a7b41b57e92f4a72e"><td class="memItemLeft" align="right" valign="top">EX bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="barriers_8cpp.html#ab1dd8ee19467d49a7b41b57e92f4a72e">hr::hasbardir</a> (cell *c)</td></tr>
+<tr class="memitem:ab1dd8ee19467d49a7b41b57e92f4a72e"><td class="memItemLeft" align="right" valign="top">EX bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#ab1dd8ee19467d49a7b41b57e92f4a72e">hr::hasbardir</a> (cell *c)</td></tr>
 <tr class="separator:ab1dd8ee19467d49a7b41b57e92f4a72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad29b70f2944e547db6bb1c9922b20179"><td class="memItemLeft" align="right" valign="top"><a id="ad29b70f2944e547db6bb1c9922b20179"></a>
 EX void&#160;</td><td class="memItemRight" valign="bottom"><b>hr::preventbarriers</b> (cell *c)</td></tr>
@@ -89,7 +95,7 @@ EX void&#160;</td><td class="memItemRight" valign="bottom"><b>hr::preventbarrier
 <tr class="memitem:a94193b3e1def21c6e55ece7a12b2befc"><td class="memItemLeft" align="right" valign="top"><a id="a94193b3e1def21c6e55ece7a12b2befc"></a>
 EX bool&#160;</td><td class="memItemRight" valign="bottom"><b>hr::checkBarriersBack</b> (cellwalker bb, int q IS(5), bool cross IS(false))</td></tr>
 <tr class="separator:a94193b3e1def21c6e55ece7a12b2befc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7cee7aa570040035af7835592c0b1dd"><td class="memItemLeft" align="right" valign="top">EX bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="barriers_8cpp.html#af7cee7aa570040035af7835592c0b1dd">hr::warped_version</a> (eLand l1, eLand l2)</td></tr>
+<tr class="memitem:af7cee7aa570040035af7835592c0b1dd"><td class="memItemLeft" align="right" valign="top">EX bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#af7cee7aa570040035af7835592c0b1dd">hr::warped_version</a> (eLand l1, eLand l2)</td></tr>
 <tr class="separator:af7cee7aa570040035af7835592c0b1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1183f28bcac517a8344ae6adb8979a8f"><td class="memItemLeft" align="right" valign="top"><a id="a1183f28bcac517a8344ae6adb8979a8f"></a>
 EX bool&#160;</td><td class="memItemRight" valign="bottom"><b>hr::checkBarriersNowall</b> (cellwalker bb, int q, int dir, eLand l1 IS(laNone), eLand l2 IS(laNone))</td></tr>
@@ -169,56 +175,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hr::built</b> = false
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file implements routines related to barriers (Great Walls and similar). </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="ab1dd8ee19467d49a7b41b57e92f4a72e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1dd8ee19467d49a7b41b57e92f4a72e">&#9670;&nbsp;</a></span>hasbardir()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX bool hr::hasbardir </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structhr_1_1cell.html">cell</a> *&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>return true if the cell c is not allowed to generate barriers because of other large things already existing nearby. </p>
-
-</div>
-</div>
-<a id="af7cee7aa570040035af7835592c0b1dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7cee7aa570040035af7835592c0b1dd">&#9670;&nbsp;</a></span>warped_version()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX bool hr::warped_version </td>
-          <td>(</td>
-          <td class="paramtype">eLand&#160;</td>
-          <td class="paramname"><em>l1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">eLand&#160;</td>
-          <td class="paramname"><em>l2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>warp coasts use a different algorithm for nowall barriers when has_nice_dual() is on. Check whether we should use this different algorithm when the lands are l1 and l2 </p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

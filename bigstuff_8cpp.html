@@ -66,6 +66,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -81,6 +82,11 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhr_1_1loopchecker.html">hr::loopchecker</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacehr"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html">hr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -220,7 +226,7 @@ EX bool&#160;</td><td class="memItemRight" valign="bottom"><b>hr::quickfind</b> 
 <tr class="memitem:af0e91cddb62e39fadfa22121e1a31c5c"><td class="memItemLeft" align="right" valign="top"><a id="af0e91cddb62e39fadfa22121e1a31c5c"></a>
 EX int&#160;</td><td class="memItemRight" valign="bottom"><b>hr::wallchance</b> (cell *c, bool deepOcean)</td></tr>
 <tr class="separator:af0e91cddb62e39fadfa22121e1a31c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc18c4d8085d16d885b332acbbeadd0a"><td class="memItemLeft" align="right" valign="top">EX bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bigstuff_8cpp.html#afc18c4d8085d16d885b332acbbeadd0a">hr::horo_ok</a> ()</td></tr>
+<tr class="memitem:afc18c4d8085d16d885b332acbbeadd0a"><td class="memItemLeft" align="right" valign="top">EX bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#afc18c4d8085d16d885b332acbbeadd0a">hr::horo_ok</a> ()</td></tr>
 <tr class="separator:afc18c4d8085d16d885b332acbbeadd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc4e76162669540f01494587fb8d7c3e"><td class="memItemLeft" align="right" valign="top"><a id="adc4e76162669540f01494587fb8d7c3e"></a>
 EX bool&#160;</td><td class="memItemRight" valign="bottom"><b>hr::gp_wall_test</b> ()</td></tr>
@@ -255,7 +261,7 @@ EX void&#160;</td><td class="memItemRight" valign="bottom"><b>hr::buildCamelot</
 <tr class="memitem:a77f3b54a0d106cc5688333d1ea22c524"><td class="memItemLeft" align="right" valign="top"><a id="a77f3b54a0d106cc5688333d1ea22c524"></a>
 EX int&#160;</td><td class="memItemRight" valign="bottom"><b>hr::masterAlt</b> (cell *c)</td></tr>
 <tr class="separator:a77f3b54a0d106cc5688333d1ea22c524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76f85df12bc4ee77a93da046060ee717"><td class="memItemLeft" align="right" valign="top">EX int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bigstuff_8cpp.html#a76f85df12bc4ee77a93da046060ee717">hr::temple_layer_size</a> ()</td></tr>
+<tr class="memitem:a76f85df12bc4ee77a93da046060ee717"><td class="memItemLeft" align="right" valign="top">EX int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a76f85df12bc4ee77a93da046060ee717">hr::temple_layer_size</a> ()</td></tr>
 <tr class="separator:a76f85df12bc4ee77a93da046060ee717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95fe2cc758215f221c9c05e7f4e3c29a"><td class="memItemLeft" align="right" valign="top"><a id="a95fe2cc758215f221c9c05e7f4e3c29a"></a>
 EX int&#160;</td><td class="memItemRight" valign="bottom"><b>hr::horo_gen_distance</b> ()</td></tr>
@@ -304,64 +310,7 @@ EX vector&lt; eLand &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>h
 <li>'setland' routines for other geometries</li>
 <li>the buildBigStuff function which calls equidistant/(horo)cycle/barrier generators. This routines are general, i.e., not necessarily Steam-specific. </li>
 </ul>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="afc18c4d8085d16d885b332acbbeadd0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc18c4d8085d16d885b332acbbeadd0a">&#9670;&nbsp;</a></span>horo_ok()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX bool hr::horo_ok </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>should we generate the horocycles in the current geometry? </p>
-
-</div>
-</div>
-<a id="a76f85df12bc4ee77a93da046060ee717"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76f85df12bc4ee77a93da046060ee717">&#9670;&nbsp;</a></span>temple_layer_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX int hr::temple_layer_size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>the distance between two layers of Temple of Cthulhu </p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a58c687612e767d137e0bc13fb214c7d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58c687612e767d137e0bc13fb214c7d2">&#9670;&nbsp;</a></span>ccm_bigstuff</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto hr::ccm_bigstuff</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= addHook(hooks_gamedata, 0, [] (gamedata* gd) {</div>
-<div class="line">  gd-&gt;store(euland);</div>
-<div class="line">  gd-&gt;store(euland3);</div>
-<div class="line">  gd-&gt;store(euland3_hash);</div>
-<div class="line">  })</div>
-</div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

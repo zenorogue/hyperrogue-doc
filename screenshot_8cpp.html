@@ -66,6 +66,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -83,6 +84,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhr_1_1anims_1_1animated__parameter.html">hr::anims::animated_parameter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhr_1_1startanims_1_1startanim.html">hr::startanims::startanim</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacehr"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html">hr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -566,7 +572,7 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>hr::startanims::sanim
 <div class="line">  dynamicval&lt;ld&gt; ds(vid.scale, 500);</div>
 <div class="line">  ld alpha = 2 * M_PI * ticks / 10000.;</div>
 <div class="line">  ld circle_radius = acosh(2.);</div>
-<div class="line">  dynamicval&lt;transmatrix&gt; dv(View, <a class="code" href="hyperpoint_8cpp.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(-cos_auto(circle_radius)*alpha) * xpush(circle_radius) * <a class="code" href="hyperpoint_8cpp.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(alpha) * View);</div>
+<div class="line">  dynamicval&lt;transmatrix&gt; dv(View, <a class="code" href="namespacehr.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(-cos_auto(circle_radius)*alpha) * xpush(circle_radius) * <a class="code" href="namespacehr.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(alpha) * View);</div>
 <div class="line">  gamescreen(2);</div>
 <div class="line">  }}</div>
 </div><!-- fragment -->
@@ -590,7 +596,7 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>hr::startanims::sanim
 <div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> x=-25; x&lt;=25; x++)</div>
 <div class="line">      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> y=-25; y&lt;=25; y++) {</div>
 <div class="line">        ld ay = (y + mod)/5.;</div>
-<div class="line">        draw_ghost(xpush(x/5.) * <a class="code" href="hyperpoint_8cpp.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(M_PI/2) * xpush(ay), <span class="keywordtype">int</span>(y-t));</div>
+<div class="line">        draw_ghost(xpush(x/5.) * <a class="code" href="namespacehr.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(M_PI/2) * xpush(ay), <span class="keywordtype">int</span>(y-t));</div>
 <div class="line">        }</div>
 <div class="line">    });</div>
 <div class="line">  dynamicval&lt;bool&gt; rd(mapeditor::drawplayer, <span class="keyword">false</span>);</div>
@@ -618,15 +624,15 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>hr::startanims::sanim
 <div class="line">    ld mod = (tt-t*400)/400.;</div>
 <div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> x=-12; x&lt;=12; x++) {</div>
 <div class="line">      ld ax = x/4.;</div>
-<div class="line">      transmatrix T = <a class="code" href="hyperpoint_8cpp.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(-M_PI/2) * xpush(ax) * <a class="code" href="hyperpoint_8cpp.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(M_PI/2);</div>
+<div class="line">      transmatrix T = <a class="code" href="namespacehr.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(-M_PI/2) * xpush(ax) * <a class="code" href="namespacehr.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(M_PI/2);</div>
 <div class="line">      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> y=0;; y++) {</div>
 <div class="line">        ld ay = (mod - y)/4.;</div>
-<div class="line">        transmatrix U = <a class="code" href="hyperpoint_8cpp.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(M_PI/2) * xpush(ay / cosh(ax)) * T;</div>
+<div class="line">        transmatrix U = <a class="code" href="namespacehr.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(M_PI/2) * xpush(ay / cosh(ax)) * T;</div>
 <div class="line">        <span class="keywordflow">if</span>(!in_smart_range(U)) <span class="keywordflow">break</span>;</div>
 <div class="line">        draw_ghost(U, (-y - t));</div>
 <div class="line">        <span class="keywordflow">if</span>(y) {</div>
 <div class="line">          ay = (mod + y)/4.;</div>
-<div class="line">          transmatrix U = <a class="code" href="hyperpoint_8cpp.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(M_PI/2) * xpush(ay / cosh(ax)) * T;</div>
+<div class="line">          transmatrix U = <a class="code" href="namespacehr.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(M_PI/2) * xpush(ay / cosh(ax)) * T;</div>
 <div class="line">          draw_ghost(U, (y - t));</div>
 <div class="line">          }</div>
 <div class="line">        }</div>
@@ -652,7 +658,7 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>hr::startanims::sanim
 <div class="line">  dynamicval&lt;reaction_t&gt; r(add_to_frame, [] {</div>
 <div class="line">    ld t = (ticks - ticks_start - 2000) / 150000.;</div>
 <div class="line">    <span class="keywordflow">for</span>(ld i=3; i&lt;=40; i++) {</div>
-<div class="line">      draw_ghost(<a class="code" href="hyperpoint_8cpp.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(t * i * 2 * M_PI) * xpush(asinh(15. / i)) * <a class="code" href="hyperpoint_8cpp.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(M_PI/2), 1);</div>
+<div class="line">      draw_ghost(<a class="code" href="namespacehr.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(t * i * 2 * M_PI) * xpush(asinh(15. / i)) * <a class="code" href="namespacehr.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(M_PI/2), 1);</div>
 <div class="line">      }</div>
 <div class="line">    });</div>
 <div class="line">  gamescreen(2);</div>
@@ -681,7 +687,7 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>hr::startanims::sanim
 <div class="line">      ld area = 1 + (i+.5) * density;</div>
 <div class="line">      ld r = acosh(area);</div>
 <div class="line">      ld length = sinh(r);</div>
-<div class="line">      transmatrix T = <a class="code" href="hyperpoint_8cpp.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(i * step + phase / length) * xpush(r) * <a class="code" href="hyperpoint_8cpp.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(M_PI/2);</div>
+<div class="line">      transmatrix T = <a class="code" href="namespacehr.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(i * step + phase / length) * xpush(r) * <a class="code" href="namespacehr.html#a5e0a682060912eb89a0ca80997d332b4">spin</a>(M_PI/2);</div>
 <div class="line">      draw_ghost(T, i);</div>
 <div class="line">      }</div>
 <div class="line">    });</div>
@@ -713,7 +719,7 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>hr::startanims::sanim
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="ahyperpoint_8cpp_html_a5e0a682060912eb89a0ca80997d332b4"><div class="ttname"><a href="hyperpoint_8cpp.html#a5e0a682060912eb89a0ca80997d332b4">hr::spin</a></div><div class="ttdeci">EX transmatrix spin(ld alpha)</div><div class="ttdef"><b>Definition:</b> hyperpoint.cpp:434</div></div>
+<div class="ttc" id="anamespacehr_html_a5e0a682060912eb89a0ca80997d332b4"><div class="ttname"><a href="namespacehr.html#a5e0a682060912eb89a0ca80997d332b4">hr::spin</a></div><div class="ttdeci">EX transmatrix spin(ld alpha)</div><div class="ttdef"><b>Definition:</b> hyperpoint.cpp:434</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

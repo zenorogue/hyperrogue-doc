@@ -66,6 +66,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -80,6 +81,11 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhr_1_1geometry__filter.html">hr::geometry_filter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacehr"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html">hr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -105,7 +111,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>hr::set_default_filte
 <tr class="memitem:ab8465fb859f17ebae38b951b4cfadcd7"><td class="memItemLeft" align="right" valign="top"><a id="ab8465fb859f17ebae38b951b4cfadcd7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>hr::set_or_configure_geometry</b> (eGeometry g)</td></tr>
 <tr class="separator:ab8465fb859f17ebae38b951b4cfadcd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2654cf7c6a8fd6c424011d7183b36e38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="geom-exp_8cpp.html#a2654cf7c6a8fd6c424011d7183b36e38">hr::same_tiling</a> (eGeometry g2)</td></tr>
+<tr class="memitem:a2654cf7c6a8fd6c424011d7183b36e38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a2654cf7c6a8fd6c424011d7183b36e38">hr::same_tiling</a> (eGeometry g2)</td></tr>
 <tr class="separator:a2654cf7c6a8fd6c424011d7183b36e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7648294e27342472737146ff9441a13b"><td class="memItemLeft" align="right" valign="top"><a id="a7648294e27342472737146ff9441a13b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>hr::ge_select_tiling</b> ()</td></tr>
@@ -194,117 +200,7 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>hr::ah_geom</b> = add
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The 'experiments with geometry' menu. </p>
 <p>Implementation of this menu, and computation of the statistics shown there </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a2654cf7c6a8fd6c424011d7183b36e38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2654cf7c6a8fd6c424011d7183b36e38">&#9670;&nbsp;</a></span>same_tiling()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool hr::same_tiling </td>
-          <td>(</td>
-          <td class="paramtype">eGeometry&#160;</td>
-          <td class="paramname"><em>g2</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>is g2 the same tiling as the current geometry (geometry)? </p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a3fd0773249bb1a7fc2f83b15318f2cab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fd0773249bb1a7fc2f83b15318f2cab">&#9670;&nbsp;</a></span>euchelp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string hr::euchelp</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">  <span class="stringliteral">&quot;If you want to know how much the gameplay is affected by the &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;hyperbolic geometry in HyperRogue, this mode is for you!\n\n&quot;</span></div>
-<div class="line">  </div>
-<div class="line">  <span class="stringliteral">&quot;You can try many different geometries here. We start by gluing &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;n-gons in such a way that k of them meet in every vertex. &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;Depending on n and k, this either folds into a sphere, unfolds into a plane, &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;or requires a hyperbolic space. The result may be then &#39;bitrunc&#39; by &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;replacing each vertex by a 2k-gon. Furthermore, you can play &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;with quotient geometries. For example, the elliptic geometry is &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;obtained from the sphere by making the antipodes be the same point, &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;so you return to the same spot (but as a mirror image) after going there. &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;Have fun experimenting! &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;Achievements and leaderboards do not work in geometry experiments, &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;except some specific ones.\n\n&quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;In standard geometry (bitrunc or not), you can play the full game, but in other geometries &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;you select a particular land. Lands are unlocked by visiting them in this &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;session, or permanently by collecting 25 treasure. Try Crossroads in Euclidean &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;or chaos mode in non-standard non-quotient hyperbolic to visit many lands. &quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;Highlights:\n&quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;* Crystal World and Warped Coast can be understood as extra geometries.\n&quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;* Halloween is specially designed for spherical geometry.\n&quot;</span></div>
-<div class="line">  <span class="stringliteral">&quot;* To see the difference, try Hunting Grounds in Euclidean -- it is impossible.\n&quot;</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ad34d524444d2141e29c0331061ee6dd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad34d524444d2141e29c0331061ee6dd2">&#9670;&nbsp;</a></span>gf_regular_2d</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX geometry_filter hr::gf_regular_2d</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {<span class="stringliteral">&quot;regular 2D tesselations&quot;</span>, [] { </div>
-<div class="line">  <span class="keywordflow">return</span> standard_tiling() &amp;&amp; WDIM == 2 &amp;&amp; !forced_quotient();</div>
-<div class="line">  }}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1c21511641148758813b399e539eadf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c21511641148758813b399e539eadf7">&#9670;&nbsp;</a></span>gf_regular_3d</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX geometry_filter hr::gf_regular_3d</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {<span class="stringliteral">&quot;regular 3D honeycombs&quot;</span>, [] { </div>
-<div class="line">  <span class="keywordflow">if</span>(euclid) <span class="keywordflow">return</span> geometry == gCubeTiling;</div>
-<div class="line">  <span class="keywordflow">return</span> !bt::in() &amp;&amp; !kite::in() &amp;&amp; WDIM == 3 &amp;&amp; !forced_quotient() &amp;&amp; !nonisotropic &amp;&amp; !prod;</div>
-<div class="line">  }}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ad74145ac3c1db7cd51d20da24fd167eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad74145ac3c1db7cd51d20da24fd167eb">&#9670;&nbsp;</a></span>gf_quotient</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX geometry_filter hr::gf_quotient</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {<span class="stringliteral">&quot;interesting quotient spaces&quot;</span>, [] { </div>
-<div class="line">  <span class="keywordflow">return</span> forced_quotient() &amp;&amp; !elliptic;</div>
-<div class="line">  }}</div>
-</div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -66,6 +66,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
@@ -88,6 +89,11 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A matrix acting on <a class="el" href="structhr_1_1hyperpoint.html" title="A point in our continuous space Originally used for representing points in the hyperbolic plane....">hr::hyperpoint</a> Since we are using homogeneous coordinates for <a class="el" href="structhr_1_1hyperpoint.html" title="A point in our continuous space Originally used for representing points in the hyperbolic plane....">hr::hyperpoint</a>, rotations and translations can be represented as matrix multiplications. Other applications of matrices in HyperRogue (in dimension up to 4) are also implemented using transmatrix.  <a href="structhr_1_1transmatrix.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacehr"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html">hr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ac539c7fe47611738d5320760d4453602"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#ac539c7fe47611738d5320760d4453602">C0</a>&#160;&#160;&#160;(MDIM == 3 ? C02 : C03)</td></tr>
@@ -108,7 +114,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a142617d442fe06fb5478a7cc3bdfa66e"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a142617d442fe06fb5478a7cc3bdfa66e">hr::diag</a> (ld a, ld b, ld c, ld d)</td></tr>
+<tr class="memitem:a142617d442fe06fb5478a7cc3bdfa66e"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a142617d442fe06fb5478a7cc3bdfa66e">hr::diag</a> (ld a, ld b, ld c, ld d)</td></tr>
 <tr class="separator:a142617d442fe06fb5478a7cc3bdfa66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e2ce7a3576a20acbadc82913d0ef84e"><td class="memItemLeft" align="right" valign="top"><a id="a5e2ce7a3576a20acbadc82913d0ef84e"></a>
 hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><b>hr::hpxyz</b> (ld x, ld y, ld z)</td></tr>
@@ -167,7 +173,7 @@ EX ld&#160;</td><td class="memItemRight" valign="bottom"><b>hr::atan_auto</b> (l
 <tr class="memitem:a30d93cc7017611425f963291dca75dbc"><td class="memItemLeft" align="right" valign="top"><a id="a30d93cc7017611425f963291dca75dbc"></a>
 EX ld&#160;</td><td class="memItemRight" valign="bottom"><b>hr::atan2_auto</b> (ld y, ld x)</td></tr>
 <tr class="separator:a30d93cc7017611425f963291dca75dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a472f1c0499bb84c1548127b43e050240"><td class="memItemLeft" align="right" valign="top">EX ld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a472f1c0499bb84c1548127b43e050240">hr::edge_of_triangle_with_angles</a> (ld alpha, ld beta, ld gamma)</td></tr>
+<tr class="memitem:a472f1c0499bb84c1548127b43e050240"><td class="memItemLeft" align="right" valign="top">EX ld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a472f1c0499bb84c1548127b43e050240">hr::edge_of_triangle_with_angles</a> (ld alpha, ld beta, ld gamma)</td></tr>
 <tr class="separator:a472f1c0499bb84c1548127b43e050240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa41734fe1a8ae52568942cc5ac121348"><td class="memItemLeft" align="right" valign="top"><a id="aa41734fe1a8ae52568942cc5ac121348"></a>
 EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><b>hr::hpxy</b> (ld x, ld y)</td></tr>
@@ -178,14 +184,14 @@ EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><b>hr::hpxy3</b
 <tr class="memitem:ab745cb1857aff372ae80a5b139e8e4c4"><td class="memItemLeft" align="right" valign="top"><a id="ab745cb1857aff372ae80a5b139e8e4c4"></a>
 EX bool&#160;</td><td class="memItemRight" valign="bottom"><b>hr::zero_d</b> (int d, hyperpoint h)</td></tr>
 <tr class="separator:ab745cb1857aff372ae80a5b139e8e4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fe4e0985cabf0905da135cc75ee3eb5"><td class="memItemLeft" align="right" valign="top">EX ld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a3fe4e0985cabf0905da135cc75ee3eb5">hr::intval</a> (const hyperpoint &amp;h1, const hyperpoint &amp;h2)</td></tr>
+<tr class="memitem:a3fe4e0985cabf0905da135cc75ee3eb5"><td class="memItemLeft" align="right" valign="top">EX ld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a3fe4e0985cabf0905da135cc75ee3eb5">hr::intval</a> (const hyperpoint &amp;h1, const hyperpoint &amp;h2)</td></tr>
 <tr class="separator:a3fe4e0985cabf0905da135cc75ee3eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abadab3e7b59be70a7681552ddf8d72d1"><td class="memItemLeft" align="right" valign="top"><a id="abadab3e7b59be70a7681552ddf8d72d1"></a>
 EX ld&#160;</td><td class="memItemRight" valign="bottom"><b>hr::quickdist</b> (const hyperpoint &amp;h1, const hyperpoint &amp;h2)</td></tr>
 <tr class="separator:abadab3e7b59be70a7681552ddf8d72d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a784a020323355a73fb6eb82db2eafa68"><td class="memItemLeft" align="right" valign="top">EX ld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a784a020323355a73fb6eb82db2eafa68">hr::sqhypot_d</a> (int d, const hyperpoint &amp;h)</td></tr>
+<tr class="memitem:a784a020323355a73fb6eb82db2eafa68"><td class="memItemLeft" align="right" valign="top">EX ld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a784a020323355a73fb6eb82db2eafa68">hr::sqhypot_d</a> (int d, const hyperpoint &amp;h)</td></tr>
 <tr class="separator:a784a020323355a73fb6eb82db2eafa68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00af46dcbeec4076cba5052c6c40076e"><td class="memItemLeft" align="right" valign="top">EX ld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a00af46dcbeec4076cba5052c6c40076e">hr::hypot_d</a> (int d, const hyperpoint &amp;h)</td></tr>
+<tr class="memitem:a00af46dcbeec4076cba5052c6c40076e"><td class="memItemLeft" align="right" valign="top">EX ld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a00af46dcbeec4076cba5052c6c40076e">hr::hypot_d</a> (int d, const hyperpoint &amp;h)</td></tr>
 <tr class="separator:a00af46dcbeec4076cba5052c6c40076e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66fe51b46ba06a0a6d5e016f6cce212c"><td class="memItemLeft" align="right" valign="top"><a id="a66fe51b46ba06a0a6d5e016f6cce212c"></a>
 EX ld&#160;</td><td class="memItemRight" valign="bottom"><b>hr::zlevel</b> (const hyperpoint &amp;h)</td></tr>
@@ -193,17 +199,17 @@ EX ld&#160;</td><td class="memItemRight" valign="bottom"><b>hr::zlevel</b> (cons
 <tr class="memitem:a9685a88b66bb5a727ac435a6e17dbbad"><td class="memItemLeft" align="right" valign="top"><a id="a9685a88b66bb5a727ac435a6e17dbbad"></a>
 EX ld&#160;</td><td class="memItemRight" valign="bottom"><b>hr::hypot_auto</b> (ld x, ld y)</td></tr>
 <tr class="separator:a9685a88b66bb5a727ac435a6e17dbbad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd2670b83ef181617c83c4ea8446134b"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#abd2670b83ef181617c83c4ea8446134b">hr::normalize</a> (hyperpoint H)</td></tr>
+<tr class="memitem:abd2670b83ef181617c83c4ea8446134b"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#abd2670b83ef181617c83c4ea8446134b">hr::normalize</a> (hyperpoint H)</td></tr>
 <tr class="separator:abd2670b83ef181617c83c4ea8446134b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7511cc0858a529b7f079579fc13211dd"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a7511cc0858a529b7f079579fc13211dd">hr::normalize_flat</a> (hyperpoint h)</td></tr>
+<tr class="memitem:a7511cc0858a529b7f079579fc13211dd"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a7511cc0858a529b7f079579fc13211dd">hr::normalize_flat</a> (hyperpoint h)</td></tr>
 <tr class="separator:a7511cc0858a529b7f079579fc13211dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f86c8007bcff040b9908bd0b860581b"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a7f86c8007bcff040b9908bd0b860581b">hr::mid</a> (const hyperpoint &amp;H1, const hyperpoint &amp;H2)</td></tr>
+<tr class="memitem:a7f86c8007bcff040b9908bd0b860581b"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a7f86c8007bcff040b9908bd0b860581b">hr::mid</a> (const hyperpoint &amp;H1, const hyperpoint &amp;H2)</td></tr>
 <tr class="separator:a7f86c8007bcff040b9908bd0b860581b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf316fa8c4c4adb9325dbf82f3deb2ed"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#aaf316fa8c4c4adb9325dbf82f3deb2ed">hr::midz</a> (const hyperpoint &amp;H1, const hyperpoint &amp;H2)</td></tr>
+<tr class="memitem:aaf316fa8c4c4adb9325dbf82f3deb2ed"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#aaf316fa8c4c4adb9325dbf82f3deb2ed">hr::midz</a> (const hyperpoint &amp;H1, const hyperpoint &amp;H2)</td></tr>
 <tr class="separator:aaf316fa8c4c4adb9325dbf82f3deb2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19727f7223573fa61003fa3dcfb7f525"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a19727f7223573fa61003fa3dcfb7f525">hr::cspin</a> (int a, int b, ld alpha)</td></tr>
+<tr class="memitem:a19727f7223573fa61003fa3dcfb7f525"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a19727f7223573fa61003fa3dcfb7f525">hr::cspin</a> (int a, int b, ld alpha)</td></tr>
 <tr class="separator:a19727f7223573fa61003fa3dcfb7f525"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e0a682060912eb89a0ca80997d332b4"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a5e0a682060912eb89a0ca80997d332b4">hr::spin</a> (ld alpha)</td></tr>
+<tr class="memitem:a5e0a682060912eb89a0ca80997d332b4"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a5e0a682060912eb89a0ca80997d332b4">hr::spin</a> (ld alpha)</td></tr>
 <tr class="separator:a5e0a682060912eb89a0ca80997d332b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a521d8cc722d716c6bf6f6a6a34bb8c9e"><td class="memItemLeft" align="right" valign="top"><a id="a521d8cc722d716c6bf6f6a6a34bb8c9e"></a>
 EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><b>hr::random_spin</b> ()</td></tr>
@@ -268,43 +274,43 @@ EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><b>hr::deparabo
 <tr class="memitem:a38900e67e46483026dca1bdfeb81482c"><td class="memItemLeft" align="right" valign="top"><a id="a38900e67e46483026dca1bdfeb81482c"></a>
 EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><b>hr::spintoc</b> (const hyperpoint &amp;H, int t, int f)</td></tr>
 <tr class="separator:a38900e67e46483026dca1bdfeb81482c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd0fc45a5fbf7b69e98963ed952ec2ea"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#abd0fc45a5fbf7b69e98963ed952ec2ea">hr::rspintoc</a> (const hyperpoint &amp;H, int t, int f)</td></tr>
+<tr class="memitem:abd0fc45a5fbf7b69e98963ed952ec2ea"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#abd0fc45a5fbf7b69e98963ed952ec2ea">hr::rspintoc</a> (const hyperpoint &amp;H, int t, int f)</td></tr>
 <tr class="separator:abd0fc45a5fbf7b69e98963ed952ec2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7744e951dad8f5d0decc7e9ace5a3f48"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a7744e951dad8f5d0decc7e9ace5a3f48">hr::spintox</a> (const hyperpoint &amp;H)</td></tr>
+<tr class="memitem:a7744e951dad8f5d0decc7e9ace5a3f48"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a7744e951dad8f5d0decc7e9ace5a3f48">hr::spintox</a> (const hyperpoint &amp;H)</td></tr>
 <tr class="separator:a7744e951dad8f5d0decc7e9ace5a3f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4adf6fea33959e2b3e1c659bdcbb108"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#ae4adf6fea33959e2b3e1c659bdcbb108">hr::rspintox</a> (const hyperpoint &amp;H)</td></tr>
+<tr class="memitem:ae4adf6fea33959e2b3e1c659bdcbb108"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#ae4adf6fea33959e2b3e1c659bdcbb108">hr::rspintox</a> (const hyperpoint &amp;H)</td></tr>
 <tr class="separator:ae4adf6fea33959e2b3e1c659bdcbb108"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc1b35f69e7298bf5f89d5ace3474d68"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#adc1b35f69e7298bf5f89d5ace3474d68">hr::pushxto0</a> (const hyperpoint &amp;H)</td></tr>
+<tr class="memitem:adc1b35f69e7298bf5f89d5ace3474d68"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#adc1b35f69e7298bf5f89d5ace3474d68">hr::pushxto0</a> (const hyperpoint &amp;H)</td></tr>
 <tr class="separator:adc1b35f69e7298bf5f89d5ace3474d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d4d6c0f079798177b2dbae521926f81"><td class="memItemLeft" align="right" valign="top">EX void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a4d4d6c0f079798177b2dbae521926f81">hr::set_column</a> (transmatrix &amp;T, int i, const hyperpoint &amp;H)</td></tr>
+<tr class="memitem:a4d4d6c0f079798177b2dbae521926f81"><td class="memItemLeft" align="right" valign="top">EX void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a4d4d6c0f079798177b2dbae521926f81">hr::set_column</a> (transmatrix &amp;T, int i, const hyperpoint &amp;H)</td></tr>
 <tr class="separator:a4d4d6c0f079798177b2dbae521926f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53b0b170b66f74ae1545f05f9610116a"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a53b0b170b66f74ae1545f05f9610116a">hr::build_matrix</a> (hyperpoint h1, hyperpoint h2, hyperpoint h3, hyperpoint h4)</td></tr>
+<tr class="memitem:a53b0b170b66f74ae1545f05f9610116a"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a53b0b170b66f74ae1545f05f9610116a">hr::build_matrix</a> (hyperpoint h1, hyperpoint h2, hyperpoint h3, hyperpoint h4)</td></tr>
 <tr class="separator:a53b0b170b66f74ae1545f05f9610116a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14f2e7bbba22f2efa163790325870e46"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a14f2e7bbba22f2efa163790325870e46">hr::rpushxto0</a> (const hyperpoint &amp;H)</td></tr>
+<tr class="memitem:a14f2e7bbba22f2efa163790325870e46"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a14f2e7bbba22f2efa163790325870e46">hr::rpushxto0</a> (const hyperpoint &amp;H)</td></tr>
 <tr class="separator:a14f2e7bbba22f2efa163790325870e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6bd0ea1a376f38ea3700bcd2bd4766e"><td class="memItemLeft" align="right" valign="top"><a id="ad6bd0ea1a376f38ea3700bcd2bd4766e"></a>
 EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><b>hr::ggpushxto0</b> (const hyperpoint &amp;H, ld co)</td></tr>
 <tr class="separator:ad6bd0ea1a376f38ea3700bcd2bd4766e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff30188d7f19a278d1eaa5d15fefa2f3"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#aff30188d7f19a278d1eaa5d15fefa2f3">hr::gpushxto0</a> (const hyperpoint &amp;H)</td></tr>
+<tr class="memitem:aff30188d7f19a278d1eaa5d15fefa2f3"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#aff30188d7f19a278d1eaa5d15fefa2f3">hr::gpushxto0</a> (const hyperpoint &amp;H)</td></tr>
 <tr class="separator:aff30188d7f19a278d1eaa5d15fefa2f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae24518c790621c94702c237b9d9e5c0c"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#ae24518c790621c94702c237b9d9e5c0c">hr::rgpushxto0</a> (const hyperpoint &amp;H)</td></tr>
+<tr class="memitem:ae24518c790621c94702c237b9d9e5c0c"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#ae24518c790621c94702c237b9d9e5c0c">hr::rgpushxto0</a> (const hyperpoint &amp;H)</td></tr>
 <tr class="separator:ae24518c790621c94702c237b9d9e5c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31082cca6c12e38d65ca3475dae29156"><td class="memItemLeft" align="right" valign="top"><a id="a31082cca6c12e38d65ca3475dae29156"></a>
-EX void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a31082cca6c12e38d65ca3475dae29156">hr::fixmatrix</a> (transmatrix &amp;T)</td></tr>
+EX void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a31082cca6c12e38d65ca3475dae29156">hr::fixmatrix</a> (transmatrix &amp;T)</td></tr>
 <tr class="memdesc:a31082cca6c12e38d65ca3475dae29156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix the numerical inaccuracies in the isometry T The nature of hyperbolic geometry makes the computations numerically unstable. The numerical errors tend to accumulate, eventually destroying the projection. This function fixes this problem by replacing T with a 'correct' isometry. <br /></td></tr>
 <tr class="separator:a31082cca6c12e38d65ca3475dae29156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1024066c8e496f8572ccb0ef59c6a5a2"><td class="memItemLeft" align="right" valign="top">EX ld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a1024066c8e496f8572ccb0ef59c6a5a2">hr::det</a> (const transmatrix &amp;T)</td></tr>
+<tr class="memitem:a1024066c8e496f8572ccb0ef59c6a5a2"><td class="memItemLeft" align="right" valign="top">EX ld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a1024066c8e496f8572ccb0ef59c6a5a2">hr::det</a> (const transmatrix &amp;T)</td></tr>
 <tr class="separator:a1024066c8e496f8572ccb0ef59c6a5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48b34d30c98ac8a11c5281856e48aadf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a48b34d30c98ac8a11c5281856e48aadf">hr::inverse_error</a> (const transmatrix &amp;T)</td></tr>
+<tr class="memitem:a48b34d30c98ac8a11c5281856e48aadf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a48b34d30c98ac8a11c5281856e48aadf">hr::inverse_error</a> (const transmatrix &amp;T)</td></tr>
 <tr class="separator:a48b34d30c98ac8a11c5281856e48aadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1e03b5ea96c1654d56e52b0f51a3cf3"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#ad1e03b5ea96c1654d56e52b0f51a3cf3">hr::inverse</a> (const transmatrix &amp;T)</td></tr>
+<tr class="memitem:ad1e03b5ea96c1654d56e52b0f51a3cf3"><td class="memItemLeft" align="right" valign="top">EX transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#ad1e03b5ea96c1654d56e52b0f51a3cf3">hr::inverse</a> (const transmatrix &amp;T)</td></tr>
 <tr class="separator:ad1e03b5ea96c1654d56e52b0f51a3cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af678160dfe488d43ac291fc050d46bba"><td class="memItemLeft" align="right" valign="top"><a id="af678160dfe488d43ac291fc050d46bba"></a>
 EX pair&lt; ld, hyperpoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>hr::product_decompose</b> (hyperpoint h)</td></tr>
 <tr class="separator:af678160dfe488d43ac291fc050d46bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2f2cf53e3af82988c5ed2db714053c9"><td class="memItemLeft" align="right" valign="top">EX ld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#ad2f2cf53e3af82988c5ed2db714053c9">hr::hdist0</a> (const hyperpoint &amp;mh)</td></tr>
+<tr class="memitem:ad2f2cf53e3af82988c5ed2db714053c9"><td class="memItemLeft" align="right" valign="top">EX ld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#ad2f2cf53e3af82988c5ed2db714053c9">hr::hdist0</a> (const hyperpoint &amp;mh)</td></tr>
 <tr class="separator:ad2f2cf53e3af82988c5ed2db714053c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ed9735c8738636057fd4d678112f17c"><td class="memItemLeft" align="right" valign="top">EX ld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a5ed9735c8738636057fd4d678112f17c">hr::circlelength</a> (ld r)</td></tr>
+<tr class="memitem:a5ed9735c8738636057fd4d678112f17c"><td class="memItemLeft" align="right" valign="top">EX ld&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a5ed9735c8738636057fd4d678112f17c">hr::circlelength</a> (ld r)</td></tr>
 <tr class="separator:a5ed9735c8738636057fd4d678112f17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1633275c1ea505dc7819cefb72663ff"><td class="memItemLeft" align="right" valign="top"><a id="ac1633275c1ea505dc7819cefb72663ff"></a>
 EX ld&#160;</td><td class="memItemRight" valign="bottom"><b>hr::hdist</b> (const hyperpoint &amp;h1, const hyperpoint &amp;h2)</td></tr>
@@ -333,7 +339,7 @@ EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><b>hr::mid_at</
 <tr class="memitem:a6632baa09bf6682bb3d3a1eec8b00253"><td class="memItemLeft" align="right" valign="top"><a id="a6632baa09bf6682bb3d3a1eec8b00253"></a>
 EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><b>hr::mid_at_actual</b> (hyperpoint h, ld v)</td></tr>
 <tr class="separator:a6632baa09bf6682bb3d3a1eec8b00253"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa58da97fec25c1f714d7c712097e7a0e"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#aa58da97fec25c1f714d7c712097e7a0e">hr::orthogonal_of_C0</a> (hyperpoint h0, hyperpoint h1, hyperpoint h2)</td></tr>
+<tr class="memitem:aa58da97fec25c1f714d7c712097e7a0e"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#aa58da97fec25c1f714d7c712097e7a0e">hr::orthogonal_of_C0</a> (hyperpoint h0, hyperpoint h1, hyperpoint h2)</td></tr>
 <tr class="separator:aa58da97fec25c1f714d7c712097e7a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff96f39a3130c8d346548213a2468d5c"><td class="memItemLeft" align="right" valign="top"><a id="aff96f39a3130c8d346548213a2468d5c"></a>
 EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><b>hr::zshift</b> (hyperpoint x, ld z)</td></tr>
@@ -389,19 +395,19 @@ hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><b>hr::ypush0</b> 
 <tr class="memitem:a43fca2f5cb45745d574abcd9c641bc6b"><td class="memItemLeft" align="right" valign="top"><a id="a43fca2f5cb45745d574abcd9c641bc6b"></a>
 hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><b>hr::zpush0</b> (ld x)</td></tr>
 <tr class="separator:a43fca2f5cb45745d574abcd9c641bc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab281d0bedd22b2fc9e6c0afea6f9f55"><td class="memItemLeft" align="right" valign="top">hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#aab281d0bedd22b2fc9e6c0afea6f9f55">hr::tC0</a> (const transmatrix &amp;T)</td></tr>
+<tr class="memitem:aab281d0bedd22b2fc9e6c0afea6f9f55"><td class="memItemLeft" align="right" valign="top">hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#aab281d0bedd22b2fc9e6c0afea6f9f55">hr::tC0</a> (const transmatrix &amp;T)</td></tr>
 <tr class="separator:aab281d0bedd22b2fc9e6c0afea6f9f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28ef158b09b8784ceb1e6574403d37af"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a28ef158b09b8784ceb1e6574403d37af">hr::ctangent</a> (int c, ld x)</td></tr>
+<tr class="memitem:a28ef158b09b8784ceb1e6574403d37af"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a28ef158b09b8784ceb1e6574403d37af">hr::ctangent</a> (int c, ld x)</td></tr>
 <tr class="separator:a28ef158b09b8784ceb1e6574403d37af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48ce5067026cddf7c2d2be9ff764201e"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a48ce5067026cddf7c2d2be9ff764201e">hr::xtangent</a> (ld x)</td></tr>
+<tr class="memitem:a48ce5067026cddf7c2d2be9ff764201e"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a48ce5067026cddf7c2d2be9ff764201e">hr::xtangent</a> (ld x)</td></tr>
 <tr class="separator:a48ce5067026cddf7c2d2be9ff764201e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ffe18d40d6b49e388ea2950615886df"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a3ffe18d40d6b49e388ea2950615886df">hr::ztangent</a> (ld z)</td></tr>
+<tr class="memitem:a3ffe18d40d6b49e388ea2950615886df"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a3ffe18d40d6b49e388ea2950615886df">hr::ztangent</a> (ld z)</td></tr>
 <tr class="separator:a3ffe18d40d6b49e388ea2950615886df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d4e8922a9c3a63116ad6a718ec50c91"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a4d4e8922a9c3a63116ad6a718ec50c91">hr::tangent_length</a> (hyperpoint dir, ld length)</td></tr>
+<tr class="memitem:a4d4e8922a9c3a63116ad6a718ec50c91"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a4d4e8922a9c3a63116ad6a718ec50c91">hr::tangent_length</a> (hyperpoint dir, ld length)</td></tr>
 <tr class="separator:a4d4e8922a9c3a63116ad6a718ec50c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39dac31949cd369c2cab262b5b37e317"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a39dac31949cd369c2cab262b5b37e317">hr::direct_exp</a> (hyperpoint v, int steps)</td></tr>
+<tr class="memitem:a39dac31949cd369c2cab262b5b37e317"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a39dac31949cd369c2cab262b5b37e317">hr::direct_exp</a> (hyperpoint v, int steps)</td></tr>
 <tr class="separator:a39dac31949cd369c2cab262b5b37e317"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d980c13eece76ac28a560e9517fae8e"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a4d980c13eece76ac28a560e9517fae8e">hr::inverse_exp</a> (const hyperpoint h, iePrecision p, bool just_direction IS(true))</td></tr>
+<tr class="memitem:a4d980c13eece76ac28a560e9517fae8e"><td class="memItemLeft" align="right" valign="top">EX hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a4d980c13eece76ac28a560e9517fae8e">hr::inverse_exp</a> (const hyperpoint h, iePrecision p, bool just_direction IS(true))</td></tr>
 <tr class="separator:a4d980c13eece76ac28a560e9517fae8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8900851dd936534ce9cdca11a543c3f"><td class="memItemLeft" align="right" valign="top"><a id="ac8900851dd936534ce9cdca11a543c3f"></a>
 EX ld&#160;</td><td class="memItemRight" valign="bottom"><b>hr::geo_dist</b> (const hyperpoint h1, const hyperpoint h2, iePrecision p)</td></tr>
@@ -433,21 +439,21 @@ Variables</h2></td></tr>
 <tr class="memitem:a78e008f43c6683ee413e80fc8258e809"><td class="memItemLeft" align="right" valign="top"><a id="a78e008f43c6683ee413e80fc8258e809"></a>
 constexpr hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><b>hr::Hypc</b> = hyperpoint(0, 0, 0, 0)</td></tr>
 <tr class="separator:a78e008f43c6683ee413e80fc8258e809"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57062986f5ba5a81780f485cf36d81f2"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a57062986f5ba5a81780f485cf36d81f2">hr::Id</a> = diag(1,1,1,1)</td></tr>
+<tr class="memitem:a57062986f5ba5a81780f485cf36d81f2"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a57062986f5ba5a81780f485cf36d81f2">hr::Id</a> = diag(1,1,1,1)</td></tr>
 <tr class="separator:a57062986f5ba5a81780f485cf36d81f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54a744f39568ec3b499d5ccee05343e1"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a54a744f39568ec3b499d5ccee05343e1">hr::Zero</a> = diag(0,0,0,0)</td></tr>
+<tr class="memitem:a54a744f39568ec3b499d5ccee05343e1"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a54a744f39568ec3b499d5ccee05343e1">hr::Zero</a> = diag(0,0,0,0)</td></tr>
 <tr class="separator:a54a744f39568ec3b499d5ccee05343e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a558feb941252e9cac74903323f0def34"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a558feb941252e9cac74903323f0def34">hr::Mirror</a> = diag(1,-1,1,1)</td></tr>
+<tr class="memitem:a558feb941252e9cac74903323f0def34"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a558feb941252e9cac74903323f0def34">hr::Mirror</a> = diag(1,-1,1,1)</td></tr>
 <tr class="separator:a558feb941252e9cac74903323f0def34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecb888402da8a91c36c93c0a0d0abb9f"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#aecb888402da8a91c36c93c0a0d0abb9f">hr::MirrorY</a> = diag(1,-1,1,1)</td></tr>
+<tr class="memitem:aecb888402da8a91c36c93c0a0d0abb9f"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#aecb888402da8a91c36c93c0a0d0abb9f">hr::MirrorY</a> = diag(1,-1,1,1)</td></tr>
 <tr class="separator:aecb888402da8a91c36c93c0a0d0abb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af80d010512756f195a525818232215aa"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#af80d010512756f195a525818232215aa">hr::MirrorX</a> = diag(-1,1,1,1)</td></tr>
+<tr class="memitem:af80d010512756f195a525818232215aa"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#af80d010512756f195a525818232215aa">hr::MirrorX</a> = diag(-1,1,1,1)</td></tr>
 <tr class="separator:af80d010512756f195a525818232215aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11b980a13511c771473b5ced8bc0b178"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a11b980a13511c771473b5ced8bc0b178">hr::MirrorZ</a> = diag(1,1,-1,1)</td></tr>
+<tr class="memitem:a11b980a13511c771473b5ced8bc0b178"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a11b980a13511c771473b5ced8bc0b178">hr::MirrorZ</a> = diag(1,1,-1,1)</td></tr>
 <tr class="separator:a11b980a13511c771473b5ced8bc0b178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53ed84ed00f7e0e17e3b8fe041129298"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#a53ed84ed00f7e0e17e3b8fe041129298">hr::pispin</a> = diag(-1,-1,1,1)</td></tr>
+<tr class="memitem:a53ed84ed00f7e0e17e3b8fe041129298"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a53ed84ed00f7e0e17e3b8fe041129298">hr::pispin</a> = diag(-1,-1,1,1)</td></tr>
 <tr class="separator:a53ed84ed00f7e0e17e3b8fe041129298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7a672ff3dc61c701d295147d5b2145a"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperpoint_8cpp.html#af7a672ff3dc61c701d295147d5b2145a">hr::centralsym</a> = diag(-1,-1,-1,-1)</td></tr>
+<tr class="memitem:af7a672ff3dc61c701d295147d5b2145a"><td class="memItemLeft" align="right" valign="top">constexpr transmatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#af7a672ff3dc61c701d295147d5b2145a">hr::centralsym</a> = diag(-1,-1,-1,-1)</td></tr>
 <tr class="separator:af7a672ff3dc61c701d295147d5b2145a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3fba89c729bb495f1048fe4fbd9fcc0"><td class="memItemLeft" align="right" valign="top"><a id="ae3fba89c729bb495f1048fe4fbd9fcc0"></a>
 constexpr hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><b>hr::C02</b> = hyperpoint(0,0,1,0)</td></tr>
@@ -478,1055 +484,6 @@ constexpr hyperpoint&#160;</td><td class="memItemRight" valign="bottom"><b>hr::C
       </table>
 </div><div class="memdoc">
 <p>C0 is the origin in our space </p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a142617d442fe06fb5478a7cc3bdfa66e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a142617d442fe06fb5478a7cc3bdfa66e">&#9670;&nbsp;</a></span>diag()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr transmatrix hr::diag </td>
-          <td>(</td>
-          <td class="paramtype">ld&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ld&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ld&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ld&#160;</td>
-          <td class="paramname"><em>d</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>returns a diagonal matrix </p>
-
-</div>
-</div>
-<a id="a472f1c0499bb84c1548127b43e050240"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a472f1c0499bb84c1548127b43e050240">&#9670;&nbsp;</a></span>edge_of_triangle_with_angles()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX ld hr::edge_of_triangle_with_angles </td>
-          <td>(</td>
-          <td class="paramtype">ld&#160;</td>
-          <td class="paramname"><em>alpha</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ld&#160;</td>
-          <td class="paramname"><em>beta</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ld&#160;</td>
-          <td class="paramname"><em>gamma</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This function returns the length of the edge opposite the angle alpha in a triangle with angles alpha, beta, gamma. This is called the cosine rule, and of course works only in non-Euclidean geometry. </p>
-
-</div>
-</div>
-<a id="a3fe4e0985cabf0905da135cc75ee3eb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fe4e0985cabf0905da135cc75ee3eb5">&#9670;&nbsp;</a></span>intval()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX ld hr::intval </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>h1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>h2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>this function returns approximate square of distance between two points (in the spherical analogy, this would be the distance in the 3D space, through the interior, not on the surface) also used to verify whether a point h1 is on the hyperbolic plane by using Hypc for h2 </p>
-
-</div>
-</div>
-<a id="a784a020323355a73fb6eb82db2eafa68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a784a020323355a73fb6eb82db2eafa68">&#9670;&nbsp;</a></span>sqhypot_d()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX ld hr::sqhypot_d </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>h</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>square Euclidean hypotenuse in the first d dimensions </p>
-
-</div>
-</div>
-<a id="a00af46dcbeec4076cba5052c6c40076e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00af46dcbeec4076cba5052c6c40076e">&#9670;&nbsp;</a></span>hypot_d()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX ld hr::hypot_d </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>h</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Euclidean hypotenuse in the first d dimensions </p>
-
-</div>
-</div>
-<a id="abd2670b83ef181617c83c4ea8446134b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd2670b83ef181617c83c4ea8446134b">&#9670;&nbsp;</a></span>normalize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX hyperpoint hr::normalize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a>&#160;</td>
-          <td class="paramname"><em>H</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>normalize the homogeneous coordinates </p>
-
-</div>
-</div>
-<a id="a7511cc0858a529b7f079579fc13211dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7511cc0858a529b7f079579fc13211dd">&#9670;&nbsp;</a></span>normalize_flat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX hyperpoint hr::normalize_flat </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a>&#160;</td>
-          <td class="paramname"><em>h</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>normalize, and in product geometry, also flatten </p>
-
-</div>
-</div>
-<a id="a7f86c8007bcff040b9908bd0b860581b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f86c8007bcff040b9908bd0b860581b">&#9670;&nbsp;</a></span>mid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX hyperpoint hr::mid </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>H1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>H2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>get the center of the line segment from H1 to H2 </p>
-
-</div>
-</div>
-<a id="aaf316fa8c4c4adb9325dbf82f3deb2ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf316fa8c4c4adb9325dbf82f3deb2ed">&#9670;&nbsp;</a></span>midz()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX hyperpoint hr::midz </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>H1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>H2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>like mid, but take 3D into account </p>
-
-</div>
-</div>
-<a id="a19727f7223573fa61003fa3dcfb7f525"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19727f7223573fa61003fa3dcfb7f525">&#9670;&nbsp;</a></span>cspin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX transmatrix hr::cspin </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ld&#160;</td>
-          <td class="paramname"><em>alpha</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>rotate by alpha degrees in the coordinates a, b </p>
-
-</div>
-</div>
-<a id="a5e0a682060912eb89a0ca80997d332b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e0a682060912eb89a0ca80997d332b4">&#9670;&nbsp;</a></span>spin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX transmatrix hr::spin </td>
-          <td>(</td>
-          <td class="paramtype">ld&#160;</td>
-          <td class="paramname"><em>alpha</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>rotate by alpha degrees in the XY plane </p>
-
-</div>
-</div>
-<a id="abd0fc45a5fbf7b69e98963ed952ec2ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd0fc45a5fbf7b69e98963ed952ec2ea">&#9670;&nbsp;</a></span>rspintoc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX transmatrix hr::rspintoc </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>H</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>f</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>an Euclidean rotation in the axes (t,f) which rotates the point H to the positive 't' axis </p>
-
-</div>
-</div>
-<a id="a7744e951dad8f5d0decc7e9ace5a3f48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7744e951dad8f5d0decc7e9ace5a3f48">&#9670;&nbsp;</a></span>spintox()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX transmatrix hr::spintox </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>H</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>an isometry which takes the point H to the positive X axis </p><dl class="section see"><dt>See also</dt><dd>rspintox </dd></dl>
-
-</div>
-</div>
-<a id="ae4adf6fea33959e2b3e1c659bdcbb108"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4adf6fea33959e2b3e1c659bdcbb108">&#9670;&nbsp;</a></span>rspintox()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX transmatrix hr::rspintox </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>H</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>inverse of hr::spintox </p>
-
-</div>
-</div>
-<a id="adc1b35f69e7298bf5f89d5ace3474d68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc1b35f69e7298bf5f89d5ace3474d68">&#9670;&nbsp;</a></span>pushxto0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX transmatrix hr::pushxto0 </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>H</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>for H on the X axis, this matrix pushes H to C0 </p><dl class="section see"><dt>See also</dt><dd>gpushxto0 </dd></dl>
-
-</div>
-</div>
-<a id="a4d4d6c0f079798177b2dbae521926f81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d4d6c0f079798177b2dbae521926f81">&#9670;&nbsp;</a></span>set_column()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX void hr::set_column </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structhr_1_1transmatrix.html">transmatrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>T</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>H</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>set the i-th column of T to H </p>
-
-</div>
-</div>
-<a id="a53b0b170b66f74ae1545f05f9610116a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53b0b170b66f74ae1545f05f9610116a">&#9670;&nbsp;</a></span>build_matrix()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX transmatrix hr::build_matrix </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a>&#160;</td>
-          <td class="paramname"><em>h1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a>&#160;</td>
-          <td class="paramname"><em>h2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a>&#160;</td>
-          <td class="paramname"><em>h3</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a>&#160;</td>
-          <td class="paramname"><em>h4</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>build a matrix using the given vectors as columns </p>
-
-</div>
-</div>
-<a id="a14f2e7bbba22f2efa163790325870e46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14f2e7bbba22f2efa163790325870e46">&#9670;&nbsp;</a></span>rpushxto0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX transmatrix hr::rpushxto0 </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>H</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>for H on the X axis, this matrix pushes C0 to H </p><dl class="section see"><dt>See also</dt><dd>rgpushxto0 </dd></dl>
-
-</div>
-</div>
-<a id="aff30188d7f19a278d1eaa5d15fefa2f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff30188d7f19a278d1eaa5d15fefa2f3">&#9670;&nbsp;</a></span>gpushxto0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX transmatrix hr::gpushxto0 </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>H</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>a translation matrix which takes H to 0 </p>
-
-</div>
-</div>
-<a id="ae24518c790621c94702c237b9d9e5c0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae24518c790621c94702c237b9d9e5c0c">&#9670;&nbsp;</a></span>rgpushxto0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX transmatrix hr::rgpushxto0 </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>H</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>a translation matrix which takes 0 to H </p>
-
-</div>
-</div>
-<a id="a1024066c8e496f8572ccb0ef59c6a5a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1024066c8e496f8572ccb0ef59c6a5a2">&#9670;&nbsp;</a></span>det()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX ld hr::det </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1transmatrix.html">transmatrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>T</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>determinant </p>
-
-</div>
-</div>
-<a id="a48b34d30c98ac8a11c5281856e48aadf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48b34d30c98ac8a11c5281856e48aadf">&#9670;&nbsp;</a></span>inverse_error()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void hr::inverse_error </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1transmatrix.html">transmatrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>T</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>warning about incorrect inverse </p>
-
-</div>
-</div>
-<a id="ad1e03b5ea96c1654d56e52b0f51a3cf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1e03b5ea96c1654d56e52b0f51a3cf3">&#9670;&nbsp;</a></span>inverse()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX transmatrix hr::inverse </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1transmatrix.html">transmatrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>T</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>inverse </p>
-
-</div>
-</div>
-<a id="ad2f2cf53e3af82988c5ed2db714053c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2f2cf53e3af82988c5ed2db714053c9">&#9670;&nbsp;</a></span>hdist0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX ld hr::hdist0 </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>mh</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>distance from mh and 0 </p>
-
-</div>
-</div>
-<a id="a5ed9735c8738636057fd4d678112f17c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ed9735c8738636057fd4d678112f17c">&#9670;&nbsp;</a></span>circlelength()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX ld hr::circlelength </td>
-          <td>(</td>
-          <td class="paramtype">ld&#160;</td>
-          <td class="paramname"><em>r</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>length of a circle of radius r </p>
-
-</div>
-</div>
-<a id="aa58da97fec25c1f714d7c712097e7a0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa58da97fec25c1f714d7c712097e7a0e">&#9670;&nbsp;</a></span>orthogonal_of_C0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX hyperpoint hr::orthogonal_of_C0 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a>&#160;</td>
-          <td class="paramname"><em>h0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a>&#160;</td>
-          <td class="paramname"><em>h1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a>&#160;</td>
-          <td class="paramname"><em>h2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>in 3D, an orthogonal projection of C0 on the given triangle </p>
-
-</div>
-</div>
-<a id="aab281d0bedd22b2fc9e6c0afea6f9f55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab281d0bedd22b2fc9e6c0afea6f9f55">&#9670;&nbsp;</a></span>tC0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">hyperpoint hr::tC0 </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1transmatrix.html">transmatrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>T</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>T * C0, optimized </p>
-
-</div>
-</div>
-<a id="a28ef158b09b8784ceb1e6574403d37af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28ef158b09b8784ceb1e6574403d37af">&#9670;&nbsp;</a></span>ctangent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX hyperpoint hr::ctangent </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ld&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>tangent vector in the given direction </p>
-
-</div>
-</div>
-<a id="a48ce5067026cddf7c2d2be9ff764201e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48ce5067026cddf7c2d2be9ff764201e">&#9670;&nbsp;</a></span>xtangent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX hyperpoint hr::xtangent </td>
-          <td>(</td>
-          <td class="paramtype">ld&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>tangent vector in direction X </p>
-
-</div>
-</div>
-<a id="a3ffe18d40d6b49e388ea2950615886df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ffe18d40d6b49e388ea2950615886df">&#9670;&nbsp;</a></span>ztangent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX hyperpoint hr::ztangent </td>
-          <td>(</td>
-          <td class="paramtype">ld&#160;</td>
-          <td class="paramname"><em>z</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>tangent vector in direction Y </p>
-
-</div>
-</div>
-<a id="a4d4e8922a9c3a63116ad6a718ec50c91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d4e8922a9c3a63116ad6a718ec50c91">&#9670;&nbsp;</a></span>tangent_length()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX hyperpoint hr::tangent_length </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a>&#160;</td>
-          <td class="paramname"><em>dir</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ld&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>change the length of the targent vector </p>
-
-</div>
-</div>
-<a id="a39dac31949cd369c2cab262b5b37e317"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39dac31949cd369c2cab262b5b37e317">&#9670;&nbsp;</a></span>direct_exp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX hyperpoint hr::direct_exp </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a>&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>steps</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>exponential function: follow the geodesic given by v </p>
-
-</div>
-</div>
-<a id="a4d980c13eece76ac28a560e9517fae8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d980c13eece76ac28a560e9517fae8e">&#9670;&nbsp;</a></span>inverse_exp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX hyperpoint hr::inverse_exp </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structhr_1_1hyperpoint.html">hyperpoint</a>&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">iePrecision&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool just_direction &#160;</td>
-          <td class="paramname"><em>IS</em>true&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>inverse exponential function </p><dl class="section see"><dt>See also</dt><dd>hr::direct_exp </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a57062986f5ba5a81780f485cf36d81f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57062986f5ba5a81780f485cf36d81f2">&#9670;&nbsp;</a></span>Id</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr transmatrix hr::Id = diag(1,1,1,1)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>identity matrix </p>
-
-</div>
-</div>
-<a id="a54a744f39568ec3b499d5ccee05343e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54a744f39568ec3b499d5ccee05343e1">&#9670;&nbsp;</a></span>Zero</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr transmatrix hr::Zero = diag(0,0,0,0)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>zero matrix </p>
-
-</div>
-</div>
-<a id="a558feb941252e9cac74903323f0def34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a558feb941252e9cac74903323f0def34">&#9670;&nbsp;</a></span>Mirror</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr transmatrix hr::Mirror = diag(1,-1,1,1)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>mirror image </p>
-
-</div>
-</div>
-<a id="aecb888402da8a91c36c93c0a0d0abb9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecb888402da8a91c36c93c0a0d0abb9f">&#9670;&nbsp;</a></span>MirrorY</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr transmatrix hr::MirrorY = diag(1,-1,1,1)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>mirror image: flip in the Y coordinate </p>
-
-</div>
-</div>
-<a id="af80d010512756f195a525818232215aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af80d010512756f195a525818232215aa">&#9670;&nbsp;</a></span>MirrorX</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr transmatrix hr::MirrorX = diag(-1,1,1,1)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>mirror image: flip in the X coordinate </p>
-
-</div>
-</div>
-<a id="a11b980a13511c771473b5ced8bc0b178"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11b980a13511c771473b5ced8bc0b178">&#9670;&nbsp;</a></span>MirrorZ</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr transmatrix hr::MirrorZ = diag(1,1,-1,1)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>mirror image: flip in the Z coordinate </p>
-
-</div>
-</div>
-<a id="a53ed84ed00f7e0e17e3b8fe041129298"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53ed84ed00f7e0e17e3b8fe041129298">&#9670;&nbsp;</a></span>pispin</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr transmatrix hr::pispin = diag(-1,-1,1,1)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>rotate by PI in the XY plane </p>
-
-</div>
-</div>
-<a id="af7a672ff3dc61c701d295147d5b2145a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7a672ff3dc61c701d295147d5b2145a">&#9670;&nbsp;</a></span>centralsym</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr transmatrix hr::centralsym = diag(-1,-1,-1,-1)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>central symmetry matrix </p>
 
 </div>
 </div>

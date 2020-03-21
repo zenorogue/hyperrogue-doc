@@ -65,6 +65,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -77,6 +78,11 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="hyper_8h.html">hyper.h</a>&quot;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacehr"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html">hr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a177efa9e9bb645f43d33c9200f0e85c8"><td class="memItemLeft" align="right" valign="top"><a id="a177efa9e9bb645f43d33c9200f0e85c8"></a>
@@ -91,7 +97,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a793ec0aa8a53f90fb4c664348c6f1927"><td class="memItemLeft" align="right" valign="top"><a id="a793ec0aa8a53f90fb4c664348c6f1927"></a>
 EX cell *&#160;</td><td class="memItemRight" valign="bottom"><b>hr::newCell</b> (int type, heptagon *master)</td></tr>
 <tr class="separator:a793ec0aa8a53f90fb4c664348c6f1927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6909a83fb84bce6ca4d39bedce5eacc6"><td class="memItemLeft" align="right" valign="top">EX hstate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="heptagon_8cpp.html#a6909a83fb84bce6ca4d39bedce5eacc6">hr::transition</a> (hstate s, int dir)</td></tr>
+<tr class="memitem:a6909a83fb84bce6ca4d39bedce5eacc6"><td class="memItemLeft" align="right" valign="top">EX hstate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a6909a83fb84bce6ca4d39bedce5eacc6">hr::transition</a> (hstate s, int dir)</td></tr>
 <tr class="separator:a6909a83fb84bce6ca4d39bedce5eacc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33f08caa6d0d68b7d1d90f8804647699"><td class="memItemLeft" align="right" valign="top"><a id="a33f08caa6d0d68b7d1d90f8804647699"></a>
 EX heptagon *&#160;</td><td class="memItemRight" valign="bottom"><b>hr::buildHeptagon1</b> (heptagon *h, heptagon *parent, int d, hstate s, int pard IS(0))</td></tr>
@@ -102,7 +108,7 @@ heptagon *&#160;</td><td class="memItemRight" valign="bottom"><b>hr::buildHeptag
 <tr class="memitem:a7d7ea9e2992498bb89cdf8ad9fcacc05"><td class="memItemLeft" align="right" valign="top"><a id="a7d7ea9e2992498bb89cdf8ad9fcacc05"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>hr::addSpin</b> (heptagon *h, int d, heptagon *from, int rot, int spin)</td></tr>
 <tr class="separator:a7d7ea9e2992498bb89cdf8ad9fcacc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c97c3469b433196ba6ae31005c7d8ac"><td class="memItemLeft" align="right" valign="top">EX int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game_8cpp.html#a6c97c3469b433196ba6ae31005c7d8ac">hr::hrand</a> (int i)</td></tr>
+<tr class="memitem:a6c97c3469b433196ba6ae31005c7d8ac"><td class="memItemLeft" align="right" valign="top">EX int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a6c97c3469b433196ba6ae31005c7d8ac">hr::hrand</a> (int i)</td></tr>
 <tr class="separator:a6c97c3469b433196ba6ae31005c7d8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f5c4d4e69162d252b4a50917df6d0f3"><td class="memItemLeft" align="right" valign="top"><a id="a8f5c4d4e69162d252b4a50917df6d0f3"></a>
 heptagon *&#160;</td><td class="memItemRight" valign="bottom"><b>hr::createStep</b> (heptagon *h, int d)</td></tr>
@@ -129,56 +135,7 @@ EX hookset&lt; void(heptagon *, int)&gt; *&#160;</td><td class="memItemRight" va
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>implementation of Heptagons </p>
 <p>Start with <a class="el" href="locations_8cpp.html" title="definition of connection tables, walkers, cell and heptagon structures">locations.cpp</a> </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a6909a83fb84bce6ca4d39bedce5eacc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6909a83fb84bce6ca4d39bedce5eacc6">&#9670;&nbsp;</a></span>transition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX hstate hr::transition </td>
-          <td>(</td>
-          <td class="paramtype">hstate&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dir</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>the automaton is used to generate each heptagon in an unique way. See <a href="http://roguetemple.com/z/dev.php">http://roguetemple.com/z/dev.php</a> for more help. From the origin we can go further in any direction, and from other heptagons we can go in directions 3 and 4 (0 is back to origin, so 3 and 4 go forward), and sometimes in direction 5 </p>
-
-</div>
-</div>
-<a id="a6c97c3469b433196ba6ae31005c7d8ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c97c3469b433196ba6ae31005c7d8ac">&#9670;&nbsp;</a></span>hrand()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int hr::hrand </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A random integer from [0..i), generated from <a class="el" href="">hrngen</a>. We are using our own implementations rather than ones from &lt;random&gt;, to make sure that they return the same values on different compilers. </p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

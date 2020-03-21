@@ -66,6 +66,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
@@ -88,6 +89,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhr_1_1patterns_1_1changeable__pattern.html">hr::patterns::changeable_pattern</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhr_1_1linepatterns_1_1linepattern.html">hr::linepatterns::linepattern</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacehr"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html">hr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -540,66 +546,6 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>hr::ah_pattern</b> = 
 <div class="textblock"><p>various functions computing the standings of individual cells with respect to various patterns </p>
 <p>Patterns include simple ones (hexagon or heptagon, three-colorings, Chessboard) as well as more complex ones (Emerald, Palace, Field Pattern) </p>
 </div><h2 class="groupheader">Variable Documentation</h2>
-<a id="a84b50365658b81d61a9fab89872f2ec3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84b50365658b81d61a9fab89872f2ec3">&#9670;&nbsp;</a></span>elhextable</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int hr::elhextable[28][3]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">  {0,1,2}, {1,2,9}, {1,9,-1}, {1,8,-1}, {1,-1,-1}</div>
-<div class="line">  }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1acdd536ea4ac146f0391de92b556272"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1acdd536ea4ac146f0391de92b556272">&#9670;&nbsp;</a></span>colortables</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX map&lt;char, colortable&gt; hr::colortables</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">  {<span class="charliteral">&#39;A&#39;</span>, {</div>
-<div class="line">    0xF04040, 0x40F040, 0x4040F0,</div>
-<div class="line">    0xD0D000, 0xD000D0, 0x00D0D0,</div>
-<div class="line">    0xC0C0C0, 0x404040, 0x808080,</div>
-<div class="line">    0xF08040, 0xF04080, 0x40F080,</div>
-<div class="line">    0x4080F0, 0x8040F0, 0x80F040,</div>
-<div class="line">    0xFFD500 }},</div>
-<div class="line">  {<span class="charliteral">&#39;B&#39;</span>, {</div>
-<div class="line">    </div>
-<div class="line">    0, 0, 0xFFFFFF, 0xFFFF00, </div>
-<div class="line">    0xFF0000, 0xC000C0 , 0x00FF00, 0x00C0C0 , 0xFF8000, </div>
-<div class="line">    0xFFFF80, 0xC040C0, 0xFFD500, 0x000080,</div>
-<div class="line">    0x404040, 0x606060, 0x808080</div>
-<div class="line">    }},</div>
-<div class="line">  {<span class="charliteral">&#39;a&#39;</span>, {0x800000, 0x503000, 0x206000, 0x007010, 0x004040, 0x001070, 0x200060, 0x500030}},</div>
-<div class="line">  {<span class="charliteral">&#39;e&#39;</span>, {0x404040, 0x1800000, 0x1008000, 0x000080 }},</div>
-<div class="line">  {<span class="charliteral">&#39;b&#39;</span>, {0x404040, 0x1800000, 0x1008000, 0x000080 }},</div>
-<div class="line">  {<span class="charliteral">&#39;z&#39;</span>, {0x1C0C0C0, 0x1E0E0E0, 0x404040, 0x606060 }},</div>
-<div class="line">  {<span class="charliteral">&#39;x&#39;</span>, {0xC0C0C0, 0x1800000, 0x1008000, 0x000080 }},</div>
-<div class="line">  {<span class="charliteral">&#39;t&#39;</span>, {0x804040, 0x1408040, 0x404080, 0x1808040 }},</div>
-<div class="line">  {<span class="charliteral">&#39;c&#39;</span>, {0x202020, 0x1C0C0C0}},</div>
-<div class="line">  {<span class="charliteral">&#39;F&#39;</span>, {0x1C0C0C0, 0x202020}},</div>
-<div class="line">  {<span class="charliteral">&#39;w&#39;</span>, {0x303030, 0x1C0C0C0}},</div>
-<div class="line">  {<span class="charliteral">&#39;v&#39;</span>, {0xC00000, 0xC08000, 0xC0C000, 0x00C000, 0xC0C0, 0x00C0, 0xC000C0}},</div>
-<div class="line">  {<span class="charliteral">&#39;j&#39;</span>, {0x100FFFF, 0x100FF00, 0x1FFFF00, 0x1FF8000, 0x1FF0000, 0x1FF00FF}},  </div>
-<div class="line">  {<span class="charliteral">&#39;!&#39;</span>, {0x1202020, 0x1000080, 0x1008000, 0x1008080, 0x1800000, 0x1800080, 0x1808000, 0x1C0C0C0,</div>
-<div class="line">         0x1808080, 0x10000FF, 0x100FF00, 0x100FFFF, 0x1FF0000, 0x1FF00FF, 0x1FFFF00, 0x1FFFFFF}},</div>
-<div class="line">  }</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a12da0de2c8352f341d7b57e70ef786e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a12da0de2c8352f341d7b57e70ef786e5">&#9670;&nbsp;</a></span>patterns</h2>
 

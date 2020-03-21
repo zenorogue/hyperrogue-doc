@@ -96,11 +96,11 @@ $(function() {
 <li><a class="el" href="classes_8cpp.html" title="items, monsters, walls, lands, descriptions, etc.">classes.cpp</a> and <a class="el" href="content_8cpp.html" title="X-macros for items, monsters, walls, and lands.">content.cpp</a> &ndash; <a class="el" href="content_8cpp.html" title="X-macros for items, monsters, walls, and lands.">content.cpp</a> is actual game content (lands, walls, items, monsters), so if you want to add more, start here.</li>
 <li><a class="el" href="landgen_8cpp.html" title="generating various lands">landgen.cpp</a> is basic (local) land generation, while barriers (i.e., Great Walls) are handled in <a class="el" href="barriers_8cpp.html" title="This file implements routines related to barriers (Great Walls and similar).">barriers.cpp</a>, and equidistant surfaces, horocycles etc. are handled in <a class="el" href="bigstuff_8cpp.html" title="Large map structures, such as (horo)cycles and equidistants.">bigstuff.cpp</a>.</li>
 <li><a class="el" href="complex_8cpp.html" title="This file implements the gameplay/generation for the more complex lands and mechanics.">complex.cpp</a> and <a class="el" href="complex2_8cpp.html" title="Continuation of complex.cpp.">complex2.cpp</a> defines mechanics which are more unique to specific lands.</li>
-<li><a class="el" href="pcmove_8cpp.html" title="PC movements.">pcmove.cpp</a> implements the player movement. Because of the checkmate rule, any changes to the map (made during the player movement, before the monsters' turn) need to be made temporarily. This is done using hr::changes, implemented in <a class="el" href="pcmove_8cpp.html" title="PC movements.">pcmove.cpp</a>.</li>
+<li><a class="el" href="pcmove_8cpp.html" title="PC movements.">pcmove.cpp</a> implements the player movement. Because of the checkmate rule, any changes to the map (made during the player movement, before the monsters' turn) need to be made temporarily. This is done using <a class="el" href="namespacehr.html#ab65a154a41b9b607dd7606dff422c734">hr::changes</a>, implemented in <a class="el" href="pcmove_8cpp.html" title="PC movements.">pcmove.cpp</a>.</li>
 <li>passable.cpp deals with passability.</li>
 <li><a class="el" href="monstergen_8cpp.html" title="monster generation">monstergen.cpp</a> deals with monster generation. This is used mostly for wandering monsters (basic generation during the exploration is handled in <a class="el" href="landgen_8cpp.html" title="generating various lands">landgen.cpp</a>).</li>
 <li><a class="el" href="monstermove_8cpp.html" title="monster movement">monstermove.cpp</a> deals with monster movement.</li>
-<li><a class="el" href="environment_8cpp.html" title="game environment: routines related to the game that affect all the map. Monsters to move are detected...">environment.cpp</a> deals with the environment: finding all the monster types currently on screen, monstersTurn() function, etc.</li>
+<li><a class="el" href="environment_8cpp.html" title="game environment: routines related to the game that affect all the map. Monsters to move are detected...">environment.cpp</a> deals with the environment: finding all the monster types currently on screen, hr::monstersTurn() function, etc.</li>
 <li><a class="el" href="mapeffects_8cpp.html" title="Routines handling the map effects.">mapeffects.cpp</a> deals with various terrain effects (fires, boats, explosions, etc.)</li>
 <li>items.cpp deals with items &ndash; mostly, collecting them.</li>
 <li><a class="el" href="orbs_8cpp.html" title="Implementation of various Orb effects, and their properties such as default and maximum charges.">orbs.cpp</a> deals with Orb effects, while <a class="el" href="orbgen_8cpp.html" title="Orb generation: which orbs in which lands, functions generating prize/local orbs, etc.">orbgen.cpp</a> deals with Orb generation.</li>
@@ -115,13 +115,13 @@ $(function() {
 <li>Add new entries to hyperrogue-music.txt, these are indexed by integer IDs.</li>
 <li>Create the new monsters (as described below), and add entries to isNative in <a class="el" href="landlock_8cpp.html" title="unlocking lands, which lands could be found beyond the wall, validity of various lands depending on t...">landlock.cpp</a>.</li>
 <li>Implement the land generation in void giantLandSwitch(cell *c, int d, cell *from) (hint: this function is called for each cell whenever the minimum distance from the player (d) decreases; d=7 are visible and thus they are fully generated)</li>
-<li>You probably want to add some wandering monsters at high treasure counts &ndash; see <a class="el" href="monstergen_8cpp.html#a80e28d388c9fda4f41e0966c9f8822c6">wandering()</a> in <a class="el" href="monstergen_8cpp.html" title="monster generation">monstergen.cpp</a></li>
+<li>You probably want to add some wandering monsters at high treasure counts &ndash; see <a class="el" href="namespacehr.html#a80e28d388c9fda4f41e0966c9f8822c6">hr::wandering()</a> in <a class="el" href="monstergen_8cpp.html" title="monster generation">monstergen.cpp</a></li>
 <li>Add new entries to <a class="el" href="graph_8cpp.html" title="Drawing cells, monsters, items, etc.">graph.cpp</a> to draw the new land correctly</li>
 <li>To make the land reachable, you should do the following things: (land unlocking is not factored very well)</li>
 <li>* add entries to getNewLand in <a class="el" href="landlock_8cpp.html" title="unlocking lands, which lands could be found beyond the wall, validity of various lands depending on t...">landlock.cpp</a>, to make the land actually reachable</li>
 <li>* add entries to land_over in <a class="el" href="landlock_8cpp.html" title="unlocking lands, which lands could be found beyond the wall, validity of various lands depending on t...">landlock.cpp</a>, which specifies the order in the Land Overview</li>
 <li>* add rules to land_validity if there are any restrictions (note: the default is that there are no restrictions &ndash; the land could appear in Chaos Yendor Challenge)</li>
-<li>You might want to add special cases in functions: earthFloor(), earthWall(), summonedAt(), or add a new Yendor Challenge</li>
+<li>You might want to add special cases in functions: hr::earthFloor(), hr::earthWall(), hr::summonedAt(), or add a new Yendor Challenge</li>
 <li>For the Steam version, achievements and leaderboards should be added</li>
 </ul>
 <p>For Monsters:</p>
@@ -133,27 +133,27 @@ $(function() {
 <p>Adding Items</p>
 <ul>
 <li>To save the treasure count correctly, add a line applyBoxI(eItem) in <a class="el" href="system_8cpp.html" title="changing game modes, starting, closing, loading and saving games">system.cpp</a>, and increase POSSCORE by 1</li>
-<li>To save the Orbs correctly, add lines applyBoxOrb(eItem) and list_invorb(); in <a class="el" href="system_8cpp.html" title="changing game modes, starting, closing, loading and saving games">system.cpp</a>, and increase POSSCORE by 2 (this saves both the current number of charges, and the OSM inventory) This has to be added last, to keep compatibility</li>
-<li>For Orbs, you have to add entries to reduceOrbPowers() (maximum charges) and orbcharges() (charges per Orb) in <a class="el" href="orbs_8cpp.html" title="Implementation of various Orb effects, and their properties such as default and maximum charges.">orbs.cpp</a></li>
+<li>To save the Orbs correctly, add lines hr::applyBoxOrb(eItem) and hr::list_invorb(); in <a class="el" href="system_8cpp.html" title="changing game modes, starting, closing, loading and saving games">system.cpp</a>, and increase POSSCORE by 2 (this saves both the current number of charges, and the OSM inventory) This has to be added last, to keep compatibility</li>
+<li>For Orbs, you have to add entries to hr::reduceOrbPowers() (maximum charges) and hr::orbcharges() (charges per Orb) in <a class="el" href="orbs_8cpp.html" title="Implementation of various Orb effects, and their properties such as default and maximum charges.">orbs.cpp</a></li>
 <li>Treasure pictures are based on the ASCII glyphs by default &ndash; if you want something special, add a case to drawItemType in <a class="el" href="graph_8cpp.html" title="Drawing cells, monsters, items, etc.">graph.cpp</a></li>
 </ul>
 <p>Adding Wall Types (i.e., any static objects)</p>
 <ul>
-<li>You need to define how the new wall type reacts to many different effects: boatGoesThrough(), passable(), prespill(), makeflame(), explodeAround(), flashCell(), castLightningBolt(), explodeMine(), summonedAt(), beastcrash() (most of these are in <a class="el" href="mapeffects_8cpp.html" title="Routines handling the map effects.">mapeffects.cpp</a>).</li>
+<li>You need to define how the new wall type reacts to many different effects: hr::boatGoesThrough(), hr::passable(), hr::prespill(), hr::makeflame(), hr::explodeAround(), hr::flashCell(), hr::castLightningBolt(), hr::explodeMine(), hr::summonedAt(), hr::beastcrash() (most of these are in <a class="el" href="mapeffects_8cpp.html" title="Routines handling the map effects.">mapeffects.cpp</a>).</li>
 </ul>
 <h1>How to add new graphics </h1>
 <ul>
 <li>Draw a picture in the Vector Graphics Editor, and press Shift+S to get the code</li>
 <li>Paste the code into polydata[] in <a class="el" href="polygons_8cpp.html" title="shapes used for the vector graphics, mostly hand-drawn (the vector data is here), some procedurally g...">polygons.cpp</a>, but replace ID by NEWSHAPE, (number identifier)</li>
 <li>Add a new shape member (sh*) in <a class="el" href="structhr_1_1geometry__information.html">hr::geometry_information</a></li>
-<li>For floor shapes, add a new member of type escher_floorshape in <a class="el" href="structhr_1_1geometry__information.html">hr::geometry_information</a>, and init_escher() call in init_floorshapes() (the parameters are the number identifiers from polydata)</li>
+<li>For floor shapes, add a new member of type escher_floorshape in <a class="el" href="structhr_1_1geometry__information.html">hr::geometry_information</a>, and hr::init_escher() call in hr::init_floorshapes() (the parameters are the number identifiers from polydata)</li>
 <li>For non-floor shapes, link the new shape global variable to the polydata[] entry in buildpolys() (by calling function bshape)</li>
 <li>Add the code using the new shape variable to <a class="el" href="graph_8cpp.html" title="Drawing cells, monsters, items, etc.">graph.cpp</a></li>
 </ul>
 <h1>How to add configuration </h1>
 <ul>
 <li>Add a new variable in struct videopar in <a class="el" href="hyper_8h.html" title="The main header file of HyperRogue.">hyper.h</a>, or some other place if you prefer</li>
-<li>Provide a default value and config file line in void initConfig() in <a class="el" href="config_8cpp.html" title="Configuration – initial settings, saving/loading ini files, menus, etc.">config.cpp</a></li>
+<li>Provide a default value and config file line in void hr::initConfig() in <a class="el" href="config_8cpp.html" title="Configuration – initial settings, saving/loading ini files, menus, etc.">config.cpp</a></li>
 <li>Add a menu entry in the appropriate show* function (hint: old code implements the reaction to selecting the menu option as a case in keyhandler &ndash; the new code just calls the add_action function just after showing the menu option, which is more convenient)</li>
 </ul>
 <h1>Adding new text (including names and descriptions of lands/items/walls/monsters) </h1>
@@ -162,15 +162,15 @@ $(function() {
 <li>It is good to list all the added texts (i.e., possible parameters to XLAT) somewhere, so it can be translated</li>
 </ul>
 <h1>How to add new projections </h1>
-<p>This is simple (well, in the easy cases) &ndash; add new entry to classes.h (enum eModel), <a class="el" href="classes_8cpp.html" title="items, monsters, walls, lands, descriptions, etc.">classes.cpp</a> (hr::mdinf), and implement your projection in applymodel() in <a class="el" href="hypgraph_8cpp.html" title="mapping hyperpoints to the screen, and related functions">hypgraph.cpp</a>.</p>
+<p>This is simple (well, in the easy cases) &ndash; add new entry to classes.h (enum hr::eModel), <a class="el" href="classes_8cpp.html" title="items, monsters, walls, lands, descriptions, etc.">classes.cpp</a> (<a class="el" href="namespacehr.html#a112c9feb93dacaaa641e509c4aafdb67">hr::mdinf</a>), and implement your projection in hr::applymodel() in <a class="el" href="hypgraph_8cpp.html" title="mapping hyperpoints to the screen, and related functions">hypgraph.cpp</a>.</p>
 <h1>How to add new geometries (i.e., map structures) </h1>
 <p>Well, this is ambitious.</p>
 <ul>
-<li>Add new entry to classes.h (enum eGeometry), <a class="el" href="classes_8cpp.html" title="items, monsters, walls, lands, descriptions, etc.">classes.cpp</a> (hr::ginf) marking your geometry as "EXPERIMENTAL".</li>
+<li>Add new entry to classes.h (enum eGeometry), <a class="el" href="classes_8cpp.html" title="items, monsters, walls, lands, descriptions, etc.">classes.cpp</a> (<a class="el" href="namespacehr.html#a3f881dd7d4d4f8a7589d652d63cc7601">hr::ginf</a>) marking your geometry as "EXPERIMENTAL".</li>
 <li>Implement a new subclass of <a class="el" href="structhr_1_1hrmap.html">hr::hrmap</a>. hr::hrmap_binary in <a class="el" href="binary-tiling_8cpp.html" title="Binary tilings in 2D and 3D.">binary-tiling.cpp</a> is a good guide.</li>
-<li>If you use the standard bitruncation, or cells correspond 1-1 to heptagons, you do not have to do anything (well, you may need to automatically disable bitruncation in <a class="el" href="#a4201df42c7fd35ed4bfde08a7f9a0f59">hr::set_geometry()</a>). Otherwise modifying <a class="el" href="cell_8cpp.html#a594d51a1a1b73cdee06b3e490c70fbe5">hr::createMov()</a> may be necessary.</li>
-<li>Modify <a class="el" href="cell_8cpp.html#a522ed0cb3f181a6813a87ef72438c713">initcells()</a> (or define a hook) to actually create a map in your subclass.</li>
-<li>For 3D geometries you need to tell HyperRogue the shape of the faces. See geometry_information::create_wall3d() in <a class="el" href="polygons_8cpp.html" title="shapes used for the vector graphics, mostly hand-drawn (the vector data is here), some procedurally g...">polygons.cpp</a>.</li>
+<li>If you use the standard bitruncation, or cells correspond 1-1 to heptagons, you do not have to do anything (well, you may need to automatically disable bitruncation in <a class="el" href="">hr::set_geometry()</a>). Otherwise modifying <a class="el" href="namespacehr.html#a594d51a1a1b73cdee06b3e490c70fbe5">hr::createMov()</a> may be necessary.</li>
+<li>Modify <a class="el" href="namespacehr.html#a522ed0cb3f181a6813a87ef72438c713">hr::initcells()</a> (or define a hook) to actually create a map in your subclass.</li>
+<li>For 3D geometries you need to tell HyperRogue the shape of the faces. See hr::geometry_information::create_wall3d() in <a class="el" href="polygons_8cpp.html" title="shapes used for the vector graphics, mostly hand-drawn (the vector data is here), some procedurally g...">polygons.cpp</a>.</li>
 <li>For 2D geometries you need to tell HyperRogue how to draw the cells (see <a class="el" href="floorshapes_8cpp.html" title="Adjusting the floor shapes to various geometries.">floorshapes.cpp</a>) and various geometry details in <a class="el" href="geometry2_8cpp.html" title="Matrices to transform between coordinates of various cells, coordinates of cell corners,...">geometry2.cpp</a>.</li>
 <li>Add an entry in <a class="el" href="geom-exp_8cpp.html" title="The &#39;experiments with geometry&#39; menu.">geom-exp.cpp</a> to make your geometry available (otherwise it can be activated with the command line option <code>-geo NameOfMyGeometry</code>).</li>
 <li>Once the basic geometry works, you can disable the experimental status of your geometry, and try making things in <a class="el" href="cell_8cpp.html" title="General cells and maps.">cell.cpp</a> (such as cell distances) and <a class="el" href="bigstuff_8cpp.html" title="Large map structures, such as (horo)cycles and equidistants.">bigstuff.cpp</a> (large scale land generation) work. </li>

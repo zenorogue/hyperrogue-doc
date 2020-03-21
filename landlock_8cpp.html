@@ -66,6 +66,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -82,6 +83,11 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhr_1_1land__validity__t.html">hr::land_validity_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacehr"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html">hr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -158,7 +164,7 @@ EX bool&#160;</td><td class="memItemRight" valign="bottom"><b>hr::in_full_game</
 <tr class="memitem:a875381001f34dc788eacc4187702c7af"><td class="memItemLeft" align="right" valign="top"><a id="a875381001f34dc788eacc4187702c7af"></a>
 EX bool&#160;</td><td class="memItemRight" valign="bottom"><b>hr::nodisplay</b> (eMonster m)</td></tr>
 <tr class="separator:a875381001f34dc788eacc4187702c7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ec3272b1dfd7a61db4bd954c914772a"><td class="memItemLeft" align="right" valign="top">EX int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="landlock_8cpp.html#a0ec3272b1dfd7a61db4bd954c914772a">hr::isNative</a> (eLand l, eMonster m)</td></tr>
+<tr class="memitem:a0ec3272b1dfd7a61db4bd954c914772a"><td class="memItemLeft" align="right" valign="top">EX int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehr.html#a0ec3272b1dfd7a61db4bd954c914772a">hr::isNative</a> (eLand l, eMonster m)</td></tr>
 <tr class="separator:a0ec3272b1dfd7a61db4bd954c914772a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab275a7d0db3f3ef7fc55c83dbdd0c0b0"><td class="memItemLeft" align="right" valign="top"><a id="ab275a7d0db3f3ef7fc55c83dbdd0c0b0"></a>
 EX eItem&#160;</td><td class="memItemRight" valign="bottom"><b>hr::treasureType</b> (eLand l)</td></tr>
@@ -472,73 +478,7 @@ const EX int&#160;</td><td class="memItemRight" valign="bottom"><b>hr::frog_when
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>unlocking lands, which lands could be found beyond the wall, validity of various lands depending on the settings </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a0ec3272b1dfd7a61db4bd954c914772a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ec3272b1dfd7a61db4bd954c914772a">&#9670;&nbsp;</a></span>isNative()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX int hr::isNative </td>
-          <td>(</td>
-          <td class="paramtype">eLand&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">eMonster&#160;</td>
-          <td class="paramname"><em>m</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>returns: 2 = treasure increaser, 1 = just appears, 0 = does not appear </p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a19a4fd78b7335be91a30ec258bfda1c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19a4fd78b7335be91a30ec258bfda1c4">&#9670;&nbsp;</a></span>land_over</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EX vector&lt;eLand&gt; hr::land_over</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">  laIce, laCaves, laDesert, laHunting, laMotion, laJungle, laAlchemist, </div>
-<div class="line">  laCrossroads, </div>
-<div class="line">  laMirror, laMirrorOld, laMinefield, laPalace, laPrincessQuest, laZebra, laSwitch, laReptile, laWet,</div>
-<div class="line">  laOcean, laDocks, laWarpCoast, laLivefjord, laKraken, laCaribbean, laBrownian, laWhirlpool, laRlyeh, laTemple,</div>
-<div class="line">  laIvoryTower, laEndorian, laWestWall, laDungeon, laMountain, </div>
-<div class="line">  laCrossroads2, </div>
-<div class="line">  laDryForest, laWineyard, laDeadCaves, laGraveyard, laHaunted, laHive, </div>
-<div class="line">  laRedRock, laVolcano,</div>
-<div class="line">  laDragon, laTortoise,</div>
-<div class="line">  laOvergrown, laClearing, laStorms, laBurial, laWhirlwind, </div>
-<div class="line">  laBlizzard,</div>
-<div class="line">  laFrog, laEclectic,</div>
-<div class="line">  laRuins, laEmerald, laVariant, laCamelot, </div>
-<div class="line">  laPrairie, laBull, laTerracotta, laRose,</div>
-<div class="line">  laElementalWall, laTrollheim,</div>
-<div class="line">  laHell, laCrossroads3, laCocytus, laPower, laCrossroads4,</div>
-<div class="line">  laCrossroads5,</div>
-<div class="line">  </div>
-<div class="line">  laWildWest, laHalloween, laDual, laSnakeNest, laMagnetic, laCA, laAsteroids</div>
-<div class="line">  }</div>
-</div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
